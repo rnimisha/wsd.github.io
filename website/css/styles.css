@@ -43,6 +43,78 @@ header h1{
 	font-size: 8vh;
 	color: #7d3933;
 	padding-top: 15px;
+}#navigation{
+	background-color:#c7d9e5;
+}
+#navigation a{
+	display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #000000;
+    height: 6vh;
+    font-size: 1.3em;
+    font-weight: bold;
+    text-decoration: none;
+    font-style: normal;
+    text-transform: uppercase;
+    flex-wrap: wrap;
+    padding:0px 4px 0px 4px;
+
+}
+#navigation a:hover{
+    background-color:#e6b8b8;
+
+}
+#navigation ul{
+    display: flex;
+    list-style-type: none;
+    justify-content: space-evenly;
+    width: 60%;
+    margin: auto;
+    flex-wrap: wrap;
+    align-items: center;
+
+}
+#navigation ul li{
+	position: relative;
+}
+
+#navigation ul li ul.dropmenu {
+        min-width: 100%; 
+        background: #c7d9e5;
+        display: none;
+        position: absolute;
+        z-index: 999;
+        left: 0;
+}
+#navigation ul li:hover ul.dropmenu {
+        display: block;
+
+}
+#navigation ul li ul.dropmenu li {
+        display: block;
+        min-height: 6vh;
+        background-color:#c7d9e5;
+}
+#navigation ul li ul.dropmenu li a{
+        text-align: center;
+        background-color:#c7d9e5;
+
+        
+}
+#navigation ul li ul.dropmenu li a:hover{
+        background-color:#e6b8b8;       
+}
+.down{
+	margin-top: 4px;
+	font-size: 15px;
+}
+#active{
+	background-color: #90b3c9;
+	border-radius: 0px 0px 4px 4px;
+}
+.grow{
+	flex-grow: 1;
 }
 #main{
 	
