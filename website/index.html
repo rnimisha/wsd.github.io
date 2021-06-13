@@ -63,7 +63,66 @@
     	</div>
     	<div id="main">
     		<figure id="myfigure">
-    			
+    			<div id="mySlider" class="carousel slide" data-bs-ride="carousel">
+               <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#mySlider" class="active" data-bs-slide-to="0"></button>
+                  <button type="button" data-bs-target="#mySlider"  data-bs-slide-to="1"></button>
+                  <button type="button" data-bs-target="#mySlider"  data-bs-slide-to="2"></button>
+                  <button type="button" data-bs-target="#mySlider"  data-bs-slide-to="3"></button>
+                  <button type="button" data-bs-target="#mySlider"  data-bs-slide-to="4"></button>
+                  <button type="button" data-bs-target="#mySlider"  data-bs-slide-to="5"></button>
+               </div>
+               <div class="carousel-inner">
+                  <div class="carousel-item active">
+                     <img src="images/1.jpg" class="sliderimg" alt="img" />
+                     <div class="carousel-caption"><h2>Rescue a Pet Today</h2>
+                        <p>Provide forever home to a pet and get a forever bestfriend.</p>
+                        <button onclick="NewTabAdopt()" class="sliderbutton">Adopt Now</button>
+                     </div>
+                  </div>
+                  <div class="carousel-item">
+                     <img src="images/2.jpg" class="sliderimg" alt="img2"/>
+                     <div class="carousel-caption"><h2>10% Discount on all our Products</h2>
+                        <p>Grab the sale before it ends</p>
+                        <button onclick="NewTabProduct()" class="sliderbutton">Shop Now</button>
+                     </div>
+                  </div>
+                  <div class="carousel-item">
+                     <img src="images/3.jpg" class="sliderimg" alt="img3"/>
+                     <div class="carousel-caption"><h2>Home Training Available Now</h2>
+                        <p>Contact us to make your pet communicate well.</p>
+                        <button onclick="NewTabTrain()" class="sliderbutton">Book Now</button>
+                     </div>
+                  </div>
+                  <div class="carousel-item">
+                     <img src="images/4.jpg" class="sliderimg" alt="img4"/>
+                     <div class="carousel-caption"><h2>Volunteer to Help Stray Animals</h2>
+                        <p>Contact us to join with us and save lives.</p>
+                        <button onclick="NewTab()" class="sliderbutton">Contact Us</button>
+                     </div>
+                  </div>
+                  <div class="carousel-item">
+                     <img src="images/5.jpg" class="sliderimg" alt="img5"/>
+                     <div class="carousel-caption"><h2>New Toys on Store Now</h2>
+                        <p>Grab them before it goes out of stock.</p>
+                        <button onclick="NewTabProduct()" class="sliderbutton">Shop Now</button>
+                     </div>
+                  </div>
+                  <div class="carousel-item">
+                     <img src="images/6.jpg" class="sliderimg" alt="img6">
+                     <div class="carousel-caption"><h2>Qualified Medical Assistance</h2>
+                        <p>We have best team and service for your pet.</p>
+                        <button onclick="NewTabHealth()" class="sliderbutton">Learn More</button>
+                     </div>
+                  </div>
+               </div>
+               <button class="carousel-control-prev" type="button" data-bs-target="#mySlider" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon"></span>
+               </button>
+               <button class="carousel-control-next" type="button" data-bs-target="#mySlider" data-bs-slide="prev">
+                  <span class="carousel-control-next-icon"></span>
+               </button>
+            </div>
     		</figure>
     		<aside id="gridmanage">
         <div id="topaside">
@@ -109,5 +168,6 @@
     	</footer>
    </div>
    <script src="js/javascript.js"></script>
+   <script src="js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
