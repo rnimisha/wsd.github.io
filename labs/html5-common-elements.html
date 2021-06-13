@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en">
+<head>
+   <title>Lab exercise html5</title>
+   <meta charset="utf-8" />
+   <meta name="author" content="Nimisha" />
+   <meta name="description" content="HTML5 lab exercises" />
+</head>
+<body>
+
+   <header>
+      <p>This page demonstrates some of the HTML5 structural elements</p>
+   </header>
+
+   <nav>
+   <ul>
+      <li>
+         <a href="#html5-elements">HTML5 Elements</a>
+      </li>
+      <li>
+         <a href="#html5-structural-elements">HTML5 Structural Elements</a>
+      </li>
+      <li>
+         <a href="#html5-common-elements">HTML5 Common Elements</a>
+      </li>
+   </ul>
+</nav>
+
+   <section id="html-elements">
+      <h1>HTML5 Elements</h1>
+      
+      <section id="html5-structural-elements">
+         <h2>HTML5 Structural Elements</h2>
+         <p>HTML structural elements include: header, nav, section, 
+            article, aside, and footer</p>
+         <ul>
+            <li>
+               A header defines the header of a page or a page section
+            </li>
+            <li>
+               HTML5 introduced the nav to replace: div id="nav"
+            </li>
+            <li>
+               Element section is a grouped area of content
+            </li>
+          </ul>
+      </section>
+      
+      <section id="html5-common-elements">
+         <h2>HTML5 Common Elements</h2>
+         
+         <a href="https://developer.mozilla.org/">click to go to the href address</a>
+         <figure>
+            <img src="images/star.svg" alt="Example SVG image" />
+            <img src="images/star.png" alt="Example PNG image" />
+            <figcaption>SVG and PNG format comparison.</figcaption>
+         </figure>
+         <a href="https://en.wikipedia.org/wiki/Scalable_Vector_Graphics">
+            <img src="images/star.svg" alt="Image formats" /> Read about image formats
+         </a>
+         <div id="div-example" class="highlight">
+            <p>Any number of element to be grouped into one division</p>
+         </div>
+         <p>The following is part of a paragraph <span class="highlight">wrapped in a span element</span> so that in can be selected.</p>
+         <blockquote cite="http://developer.mozilla.org">
+             <p>This is a quotation taken from the Mozilla Developer Center.</p>
+         </blockquote>
+         <p>In the new world of semantic markup, 
+            <q cite="http://ebbi.github.io">
+            Separation of content from how it is presented is key to modern web development.
+            </q>.
+         </p>
+         <form method="get" action="server_program_name">
+
+            <label for="email">Email: </label>
+            <input type="text" id="email" name="email" />
+
+            <label for="password">Password: </label>
+            <input type="password" id="password" name="password" />
+
+            <button type="submit" value="submit">Sign in</button>
+            <p>Choose your favourite colour:
+               <input type="radio" name="colour" value="red" checked="checked" /> Red
+               <input type="radio" name="colour" value="green" /> Green
+               <input type="radio" name="colour" value="blue" /> Blue
+            </p>
+            <p>Which is your favourite pass time?
+               <input type="radio" name="hobby" value="travel" /> Travel
+               <input type="radio" name="hobby" value="food" /> Food
+               <input type="radio" name="hobby" value="sky diving" /> Sky Diving
+            </p>
+            <p>Select your favourite colour(s):
+               <input type="checkbox" name="red" value="true" checked="checked" /> red
+               <input type="checkbox" name="green" value="true" /> green
+               <input type="checkbox" name="blue" value="true" checked="checked" /> blue
+            </p>
+         </form>
+         <form method="post" enctype="multipart/form-data" action="my_server_prog">
+            <p>
+            <label for="fileupload">Please choose a file to upload: </label>
+            <input type="file" id="fileupload" name="file1" />
+            </p>
+         </form>
+      </section>
+      
+   </section>
+   
+   <footer>
+      &copy; no rights what so ever!
+   </footer>
+
+</body>
+</html>

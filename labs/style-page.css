@@ -1,0 +1,31 @@
+
+header {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   font-family: 'Syncopate', sans-serif;
+   border-bottom: 0.1vw solid #f7b7b7;
+}
+#nav-labs ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 1vh 1vw;
+    border: 0.1vw solid #f7b7b7;
+    border-radius: 0.5vw;
+    list-style-type: none;
+}
+
+#logo { 
+   height: 5vh; 
+}
+footer {
+   margin-top: 10vh;
+   border-top: 0.1vw solid #f7b7b7;
+}
+.panel {
+   border: 0.1vw solid #e8e6e6;
+   border-radius: 0.5vw;
+   padding: 1vw;
+   margin: 1vh 0;
+}
