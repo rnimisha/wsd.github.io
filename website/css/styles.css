@@ -1,7 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@500&family=Luckiest+Guy&display=swap');
-
 @import "bootstrap.css"; 
-
 
 *{
 	margin: 0px;
@@ -10,11 +8,9 @@
 }
 
 body{
-	
 	background-color:#f8f4e9;
 	font-family: 'Baloo 2', cursive;
 	letter-spacing: -0.2px;
-
 }
 a{
 	font-style: italic;
@@ -653,3 +649,247 @@ figcaption{
 	height: 8vh;
 	background-color: #e6b8b8;
 }
+
+
+
+@media screen and (max-width: 992px){
+	#main, #aboutmain, #healthmain{
+		margin-top: auto;	}
+	#fix{
+		position: relative;
+		width: 100%;
+	}
+	#navigation ul li ul.dropmenu li {
+		min-width: 30vh;
+	}
+	.carousel-inner {
+		height: 400px;
+	}
+	#myfigure{
+		height: 420px;
+	}
+	#myfigure h2{
+		font-size: 45px;
+	}
+	.sliderimg{
+		height: 400px;
+	}
+	.sliderbutton{
+	width: 50%;
+	margin-top: 5px;
+	}
+    aside{
+		grid-column: 1/3;
+		grid-row: 2/3;
+	}
+	article{
+		grid-column: 1/3;
+		grid-row: 3/4;
+	}
+	#servicestitle{
+		grid-column: 1/3;
+		grid-row: 4/5;
+	}
+	#services{
+		grid-column: 1/3;
+		grid-row: 6/7;
+	}
+	#service1, #service2, #service3, #service4{
+	
+	width: 40%;
+	margin: 10px;
+	}
+	#aboutimg{
+		grid-column: 1/3;
+		grid-row: 1/2;
+	}
+	#aboutpar{
+		grid-column: 1/3;
+		grid-row: 2/3;
+
+	}
+	#supply1, #supply2, #speciality1, #speciality2{
+		grid-row: 3/4;
+	}
+	#supply3, #supply4, #speciality3, #speciality4{
+		grid-row: 4/5;
+	}
+	#supply1, #supply3, #groom1, #groom3, #train1, #train3, #speciality1, #speciality3{
+		grid-column: 1/3;
+	}
+	#supply2, #supply4, #groom2, #groom4, #train2, #train4, #speciality2, #speciality4{
+		grid-column: 3/5;
+	}
+	#title2{
+		grid-row: 5/6;
+	}
+	#groom1, #groom2{
+		grid-row: 6/7;
+	}
+	#groom3, #groom4{
+		grid-row: 7/8;
+	}
+	#title3{
+		grid-row: 8/9;
+	}
+	#train1, #train2{
+		grid-row: 9/10;
+	}
+	#train3, #train4{
+		grid-row: 10/11;
+	}
+	#staff{
+		grid-row: 6/7;
+	}
+	#healthflex1,#healthflex2
+    {
+	  width: 100%;
+    }
+    #staff1{
+		grid-column: 1/3;
+	}
+	#staff2{
+		grid-column: 1/3;
+		grid-row: 3/4;
+	}
+	#savepet{
+		grid-row: 8/9;
+	}
+	#viewmore{
+		grid-row: 9/10;
+	}
+}
+
+@media screen and (max-width: 600px){ 
+	.carousel-inner {
+		height: 350px;
+	}
+	#myfigure{
+		height: 370px;
+	}
+	#myfigure h2{
+		font-size: 35px;
+		margin-bottom: 10px;
+	}
+	#myfigure p{
+		display: none;
+	}
+	.sliderimg{
+		height: 350px;
+	}
+	.sliderbutton{
+	width: 80%;
+	margin-top: 5px;
+	}
+	.carousel-control-prev{
+		display: none;
+	}
+	.carousel-control-next{
+		display: none;
+	}
+	aside{
+		grid-column: 1/3;
+		grid-row: 2/3;
+	}
+	#bottomleftaside{
+		grid-column: 1/3;
+		grid-row: 2/3;
+	}
+	#bottomrightaside{
+		grid-column: 1/3;
+		grid-row: 3/4;
+	}
+	article{
+		grid-column: 1/3;
+		grid-row: 3/4;
+	}  
+	#servicestitle{
+		grid-column: 1/3;
+		grid-row: 4/5;
+	}
+	#services{
+		grid-column: 1/3;
+		grid-row: 6/7;
+	} 
+	#service1, #service2, #service3, #service4{
+	
+	width: 90%;
+	margin: 10px;
+	}
+	
+	#supply1, #supply3, #groom1, #groom3, #train1, #train3,#supply2, #supply4, #groom2, #groom4, #train2, #train4, #speciality1, #speciality2, #speciality3, #speciality4 {
+		grid-column: 1/5;
+	}
+	#supply1, #speciality1{
+		grid-row: 3/4;
+	}
+	#supply2, #speciality2{
+		grid-row: 4/5;
+	}
+	#supply3, #speciality3{
+		grid-row: 5/6;
+	}
+	#supply4, #speciality4{
+		grid-row: 6/7;
+	}
+	#title2{
+		grid-row: 7/8;
+	}
+	#groom1{
+		grid-row: 8/9;
+	}
+	#groom2{
+		grid-row: 9/10;
+	}
+	#groom3{
+		grid-row: 10/11;
+	}
+	#groom4{
+		grid-row: 11/12;
+	}
+	#title3{
+		grid-row: 12/13;
+	}
+	#train1{
+		grid-row: 13/14;
+	}
+	#train2{
+		grid-row: 14/15;
+	}
+	#train3{
+		grid-row: 15/16;
+	}
+	#train4{
+		grid-row: 16/17;
+	}
+	#staff{
+		grid-row: 8/9;
+	}
+	.staffinfo{
+		width: 80%;
+	}
+	#savepet{
+		grid-row: 9/10;
+	}
+	#viewmore{
+		grid-row: 10/11;
+	}
+	.adoptpet{
+		width: 90%;
+	}	
+	#savepet{
+		justify-content: center;
+	}
+	#showmore{
+		justify-content: center;
+	}
+	#showbutton {
+  	width: 60%;
+  	height: 12vh;
+  	margin-left: 20%;
+	}
+	.sliderbutton{
+	width: 90%;
+	height: 12vh;
+	}
+} 
