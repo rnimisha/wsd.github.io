@@ -155,7 +155,7 @@ header h1{
 	height: 500px;
 	opacity: 0.3;
 }
-.sliderbutton{
+.button, #showbutton, .sliderbutton{
   border: none;
   border-radius: 10px;
   background-color: /*#e6b8b8;*/#90b3c9;
@@ -171,7 +171,8 @@ header h1{
   height: 10vh;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
-.sliderbutton:hover{
+
+.button:hover, #showbutton:hover, .sliderbutton:hover{
 	box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 	color: #fff;
 }
@@ -423,4 +424,232 @@ figcaption{
 }
 #train1, #train2, #train3, #train4{
 	grid-row: 7/8;
+}
+
+
+
+#healthmain{
+	justify-items: stretch;
+}
+#healthtop{
+	grid-column: 1/5;
+	grid-row: 1/2;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: flex-end;
+	min-height: 560px;
+}
+#healthflex1
+{
+	width: 65%;
+}
+#healthflex2
+{
+	width: 35%;
+}
+#healthflex2 h1{
+	font-size: 50px; 
+	margin: 0px; 
+	padding: 0px; 
+	line-height: 1.3;
+}
+#healthflex2 p{
+	font-size: 20px;
+	margin-top: 10px;
+	margin-left: 10px;
+}
+.vetimg{
+	margin-top: 20px;
+	width: 100%;
+	height: 63vh;
+}
+#healthmain h1{
+	margin-left: 10px;
+	color: #7d3933;
+	font-size: 40px;
+	font-weight: bold;
+}
+#myfigure h2{
+	line-height: 1;
+	margin-bottom: -3px;
+}
+#myfigure p{
+	font-size: 20px;
+}
+#speciality1, #speciality2, #speciality3, #speciality4{
+	grid-row: 3/4;
+	width: 98%;
+	padding: 20px;
+	border: 10px solid #e6b8b8;
+	border-radius: 10px;
+	background-color: #90b3c9;
+	position: relative;
+}
+#speciality1{
+	grid-column: 1/2;
+}
+#speciality2{
+	grid-column: 2/3;
+}
+#speciality3{
+	grid-column: 3/4;
+}
+#speciality4{
+	grid-column: 4/5;
+}
+.specialityimg{
+	width: 98%;
+	align-items: center;
+	height: 120px;
+	border-radius:10px;
+	margin: 10px 20px 10px 10px;
+}
+.caption{
+	position: absolute;
+  	top: 0;
+  	bottom: 0;
+  	left: 0;
+  	right: 0;
+  	height: 100%;
+  	width: 100%;
+  	opacity: 0;
+  	transition: .5s ease;
+ 	background-color: #fff;
+
+}
+.caption h3 {
+	text-align: center;
+	padding-top: 50px;
+	font-size: 40px;
+	color: #000;
+}
+#speciality1:hover .caption,#speciality2:hover .caption,#speciality3:hover .caption,#speciality4:hover .caption{
+  opacity: 0.7;
+  cursor: pointer;
+}
+#staff{
+	grid-row: 5/6;
+	grid-column: 1/5;
+	border: 10px solid #e6b8b8;
+	border-radius: 10px;
+	background-color: #90b3c9;
+	width: 100%;
+	padding-bottom: 30px;
+	min-height: 400px;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	justify-items: center;
+
+}
+
+#newh2{
+	margin-top: 20px;
+	margin-bottom: 10px;
+}
+#stafftitle{
+	grid-row: 1/2;
+	grid-column: 1/3;
+
+}
+#staff1{
+	grid-column: 1/2;
+}
+#staff2{
+	grid-column: 2/3;
+}
+#staff1, #staff2{
+	grid-row: 2/3;
+	background-color: #e6b8b8;
+	/*min-height: 25vh;*/
+	border-radius: 20px;
+	width: 90%;
+	margin-bottom: 35px;
+	display: flex;
+	flex-direction: row;
+	padding: 20px 5px 10px 20px;
+	align-items: center;
+	flex-wrap: wrap;
+}
+.staffpic{
+	width: 85%;
+	height: 85%;
+	border-radius: 20px;
+}
+.staffinfo{
+	width: 40%;
+	margin-left: 5px;
+}
+.staffinfo h3{
+	text-align: left;
+}
+.staffinfo p{
+	margin: 0px;
+}
+#savepet{
+	grid-row: 6/7;
+	grid-column: 1/5;
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	justify-content: space-between;
+}
+#savepet h2{
+	text-align: center;
+}
+#savepet p{
+	margin: 0px;
+}
+#saveheading{
+	width: 100%;
+	margin-bottom: -20px;
+}
+
+.adoptpet{
+	width: 45%;
+	border: 10px solid #e6b8b8;
+	border-radius: 10px;
+	background-color: #90b3c9;
+	min-height: 150px;
+	margin: 20px 10px 20px 0px;
+	padding-bottom: 20px;
+}
+.adoptimg{
+	width: 80%;
+	height: 200px;
+	border-radius:10px;
+	margin:10%;
+}
+.adoptpet h3{
+	margin-top: -30px;
+}
+.adoptpet p{
+	text-align: center;
+}
+#showmore{
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	display: none;
+}
+#viewmore{
+	grid-column: 1/5;
+	grid-row: 8/9;
+	margin-top: -25px;
+	width: 100%;
+}
+
+#showbutton {
+  margin-bottom: 30px;
+  width: 40%;
+  height: 8vh;
+  margin-left: 30%;
+}
+.sliderbutton{
+	width: 40%;
+	margin-left: 0px;
+	height: 8vh;
+	background-color: #e6b8b8;
 }
