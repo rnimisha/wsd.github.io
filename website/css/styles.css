@@ -33,6 +33,17 @@ header{
     justify-content: center;
     flex-wrap: wrap;
 }
+#logo { 
+    height: 10vh;
+    margin-bottom: 5px;
+ }
+header h1{
+	font-family: 'Luckiest Guy', cursive;
+	letter-spacing: 4px;
+	font-size: 8vh;
+	color: #7d3933;
+	padding-top: 15px;
+}
 #main{
 	
 	width: 80%;
