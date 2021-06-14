@@ -671,9 +671,9 @@ figcaption{
 #gallerymain .myimages:hover{
 	opacity: 0.8;
 	cursor: pointer;
-	width: 90%;
-	height: 90%;
-	margin: 5%;
+	width: 94%;
+	height: 94%;
+	margin: 2%;
 	box-shadow: #9e957b 0px 1px 2px 0px, #9e957b 0px 2px 6px 2px,#9e957b 0px 1px 2px 0px, #9e957b 0px 2px 6px 2px;
 	border-radius: 5px;
 }
