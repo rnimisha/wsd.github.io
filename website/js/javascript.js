@@ -72,3 +72,19 @@ function moreView() {
   }
 
 }
+
+
+function zoommyimage(number){
+    var no=number;
+    var modal = document.getElementById("zoom"+no);
+    modal.style.display = "block";
+    document.getElementById("fix").style.zIndex="-1";
+}
+
+function closeimage(number){
+    var no=number;
+    var modal = document.getElementById("zoom"+no);
+    modal.style.display = "none";
+    document.getElementById("fix").style.zIndex="9999";
+}
+
