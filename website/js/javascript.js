@@ -16,7 +16,7 @@ function NewTabAdopt()
 function NewTabTrain() 
 {
   window.open("about.html#trainings", "_blank");
-}a
+}
 function NewTabHealth() 
 {
   window.open("health.html", "_blank");
