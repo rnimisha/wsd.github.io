@@ -171,7 +171,7 @@ header h1{
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
-.button:hover, #showbutton:hover, .sliderbutton:hover{
+.button:hover, #showbutton:hover, .sliderbutton:hover, .minibutton:hover{
 	box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 	color: #fff;
 }
@@ -372,6 +372,19 @@ figcaption{
 }
 #aboutpar p{
 	margin-left: 0px;
+}
+.minibutton{
+  border: none;
+  border-radius: 10px;
+  background-color:#90b3c9;
+  text-align: center;
+  text-decoration: none;
+  font-size: 20px;
+  margin: 5%;
+  cursor: pointer;
+  width: 90%;
+  height: 6vh;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 #title1{
 	grid-column: 1/5;

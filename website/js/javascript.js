@@ -73,7 +73,7 @@ function moreView() {
 
 }
 
-
+//zoom in out images
 function zoommyimage(number){
     var no=number;
     var modal = document.getElementById("zoom"+no);
