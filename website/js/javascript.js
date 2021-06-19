@@ -21,7 +21,7 @@ function NewTabHealth()
 {
   window.open("health.html", "_blank");
 }
-
+ 
 //change image on hover
 function changeImage1(){
     document.getElementById("changeimg1").src="images/change1.jpg";

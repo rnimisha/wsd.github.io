@@ -66,10 +66,20 @@
       </div>
       <div id="aboutmain">
          <div id="contact">
-            <div id="formdiv">
-               form Here
-            </div>
-            <div id="imgdiv">
+            <form method="post" action="#" name="contactform" enctype="multipart/form-data">
+               <h2>Contact Us</h2>
+               <div id="formgrid">
+                  <div class="data">
+                     <label for="fname">First Name</label>
+                     <input type="text" id="fname" name="firstname" placeholder="First Name">
+                  </div>
+                  <div class="data">
+                     <label for="lname">Last Name</label>
+                     <input type="text" id="lname" name="lastname" placeholder="Last Name">
+                  </div>
+               </div>
+            </form>
+            <div class="imagesize">
                   <img src="images/contact.png" alt="contact" class="myimages" />
             </div>
          </div>
