@@ -16,10 +16,20 @@ let insertZ = ['spontaneously combusted','melted into a puddle on the sidewalk',
 randomize.addEventListener('click', result);
 
 function result() {
+  let newStory = storyText;
+  let xItem = randomValueFromArray(insertX);
+  let yItem = randomValueFromArray(insertY);
+  let zItem = randomValueFromArray(insertZ);
+
+  newStory = newStory.replace(':insertx:',xItem);
+  newStory = newStory.replace(':insertx:',xItem);
+  newStory = newStory.replace(':inserty:',yItem);
+  newStory = newStory.replace(':insertz:',zItem);
+  
 
   if(customName.value !== '') {
     let name = customName.value;
-
+    newStory = newStory.replace('Bob',name);
   }
 
   if(document.getElementById("uk").checked) {
@@ -28,6 +38,6 @@ function result() {
 
   }
 
-  story.textContent = ;
+  story.textContent = newStory;
   story.style.visibility = 'visible';
 }
