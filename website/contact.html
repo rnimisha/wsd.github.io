@@ -66,145 +66,142 @@
       </div>
       <div id="aboutmain">
          <div id="contact">
-            <div>
+            <div id="formid">
                <div id="register">
                   <form method="post" action="#" name="contactform" enctype="multipart/form-data">
-                  <h2>Sign UP</h2>
-                  <div class="formgrid">
-                     <div>
-                        <label for="fname">First Name</label>
-                        <input type="text" id="fname" name="firstname" placeholder="First Name" class="inputbox"/>
+                     <h2>Sign UP</h2>
+                     <div class="formgrid">
+                        <div>
+                           <label for="fname">First Name</label>
+                           <input type="text" id="fname" name="firstname" placeholder="First Name" class="inputbox"/>
+                        </div>
+                        <div>
+                           <label for="lname">Last Name</label>
+                           <input type="text" id="lname" name="lastname" placeholder="Last Name" class="inputbox"/>
+                        </div>
+                     </div>
+                     <div class="data">
+                        <label for="uname">Username</label>
+                        <input type="text" id="uname" name="uname" placeholder="yourid" class="inputbox"/>
+                     </div>
+                     <div class="formgrid">
+                        <div>
+                           <label for="pass">Password</label>
+                           <input type="password" id="pass" name="pass" placeholder="PassWord" class="inputbox"/>
+                        </div>
+                        <div>
+                           <label for="conpass">Confirm Pass</label>
+                           <input type="password" id="conpass" name="conpass" placeholder="Re-Enter Pass" class="inputbox"/>
+                        </div>
+                     </div>
+                     <div class="data">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" placeholder="you@domain.com" class="inputbox"/>
+                     </div>
+                     <div class="data">
+                        <label for="address">Address</label>
+                        <input type="text" id="address" name="youraddress" placeholder="Address" class="inputbox"/>
+                     </div>
+                     <div class="data">
+                        <label for="zipcode">Zip</label>
+                        <input type="text" id="zipcode" name="zip" placeholder="#####" class="inputbox"/>
                      </div>
                      <div>
-                        <label for="lname">Last Name</label>
-                        <input type="text" id="lname" name="lastname" placeholder="Last Name" class="inputbox"/>
+                        <label>Do You Own Pet Already?</label>
+                        <div class="lineblock">
+                           <label for="ans1">
+                              <input type="radio" name="ques" value="Y"  id="ans1"/>
+                              Yes
+                           </label>
+                           <label for="ans2">
+                              <input type="radio" id="ans2" name="ques" value="N" />
+                              No
+                           </label>
+                        </div> 
                      </div>
-                  </div>
-                  <div class="data">
-                     <label for="uname">Username</label>
-                     <input type="text" id="uname" name="uname" placeholder="yourid" class="inputbox"/>
-                  </div>
-                  <div class="formgrid">
-                     <div>
-                        <label for="pass">Password</label>
-                        <input type="password" id="pass" name="pass" placeholder="PassWord" class="inputbox"/>
+                     <div class="data">
+                        <input type="checkbox" id="agreement" name="agree" value="agree"> I accept all the Terms of Use & Privacy Policy.
                      </div>
-                     <div>
-                        <label for="conpass">Confirm Pass</label>
-                        <input type="password" id="conpass" name="conpass" placeholder="Re-Enter Pass" class="inputbox"/>
-                     </div>
-                  </div>
-                  <div class="data">
-                     <label for="email">Email</label>
-                     <input type="email" id="email" name="email" placeholder="you@domain.com" class="inputbox"/>
-                  </div>
-                  <div class="data">
-                     <label for="address">Address</label>
-                     <input type="text" id="address" name="youraddress" placeholder="Address" class="inputbox"/>
-                  </div>
-                  <div class="data">
-                     <label for="zipcode">Zip</label>
-                     <input type="text" id="zipcode" name="zip" placeholder="#####" class="inputbox"/>
-                  </div>
-                  <div>
-                     <label>Do You Own Pet Already?</label>
-                     <div class="lineblock">
-                        <label for="ans1">
-                           <input type="radio" name="ques" value="Y"  id="ans1"/>
-                           Yes
-                        </label>
-                        <label for="ans2">
-                           <input type="radio" id="ans2" name="ques" value="N" />
-                           No
-                        </label>
+                     <br/>
+                     <div class="formgrid">
+                        <div>
+                           <input type="submit" name="submit" value="submit" class="minibutton" />
+                        </div>
+                        <div>
+                           <input type="reset" name="reset" value="reset" class="minibutton"/>
+                        </div>
                      </div> 
-                  </div>
-                  <div class="data">
-                     <input type="checkbox" id="agreement" name="agree" value="agree"> I accept all the Terms of Use & Privacy Policy.
-                  </div>
-                  <br/>
-                  <div class="formgrid">
-                     <div>
-                        <input type="submit" name="submit" value="submit" class="minibutton" />
+                  </form>
+               </div>
+               <div id="sendmessage">
+                  <form method="post" action="#" name="contactform" enctype="multipart/form-data">
+                     <h2>Contact Us</h2>
+                     <div class="formgrid">
+                        <div>
+                           <label for="username">Username</label>
+                           <input type="text" id="username" name="username" placeholder="yourId" class="inputbox"/>
+                        </div>
+                        <div>
+                           <label for="yourpass">Password</label>
+                           <input type="password" id="yourpass" name="yourpass" placeholder="Password" class="inputbox"/>
+                        </div>
                      </div>
                      <div>
-                        <input type="reset" name="reset" value="reset" class="minibutton"/>
-                     </div>
-                  </div> 
-               </form>
-            </div>
-            <div id="sendmessage">
-               <form method="post" action="#" name="contactform" enctype="multipart/form-data">
-                  <h2>Contact Us</h2>
-                  <div class="formgrid">
-                     <div>
-                        <label for="username">Username</label>
-                        <input type="text" id="username" name="username" placeholder="yourId" class="inputbox"/>
+                        <label for="query">Assistance for</label>
+                        <select id="query" name="query" class="inputbox">
+                           <option value="product">Product</option>
+                           <option value="train">Training</option>
+                           <option value="groom">Grooming</option>
+                           <option value="adopt">Adoption</option>
+                           <option value="vet">Vet</option>
+                           <option value="other">Other</option>
+                        </select>
                      </div>
                      <div>
-                        <label for="yourpass">Password</label>
-                        <input type="password" id="yourpass" name="yourpass" placeholder="Password" class="inputbox"/>
-                     </div>
-                  </div>
-                  <div>
-                     <label for="query">Assistance for</label>
-                     <select id="query" name="query" class="inputbox">
-                        <option value="product">Product</option>
-                        <option value="train">Training</option>
-                        <option value="groom">Grooming</option>
-                        <option value="adopt">Adoption</option>
-                        <option value="vet">Vet</option>
-                        <option value="other">Other</option>
-                     </select>
-                  </div>
-                  <div>
-                     <label>Your Pet</label>
-                     <div class="lineblock">
-                        <label for="pet1">
-                           <input type="checkbox" name="pet1" value="D"  id="pet1"/>
-                           Dog
-                        </label>
-                        <label for="pet2">
-                           <input type="checkbox" id="pet2" name="pet2" value="C" />
-                           Cat
-                        </label>
-                        <label for="pet3">
-                           <input type="checkbox" id="pet3" name="pet3" value="O" />
-                           Others
-                        </label>
-                     </div>
-                  </div>
-                  <div>
-                     <label for="message">Message</label>
-                     <textarea id="message" name="yourmessage" placeholder="Write your message here"></textarea>
-                  </div>
-                  <br/>
-                  <div class="formgrid">
-                     <div>
-                        <input type="submit" name="submit" value="submit" class="minibutton" />
+                        <label>Your Pet</label>
+                        <div class="lineblock">
+                           <label for="pet1">
+                              <input type="checkbox" name="pet1" value="D"  id="pet1"/>
+                              Dog
+                           </label>
+                           <label for="pet2">
+                              <input type="checkbox" id="pet2" name="pet2" value="C" />
+                              Cat
+                           </label>
+                           <label for="pet3">
+                              <input type="checkbox" id="pet3" name="pet3" value="O" />
+                              Others
+                           </label>
+                        </div>
                      </div>
                      <div>
-                        <input type="reset" name="reset" value="reset" class="minibutton"/>
+                        <label for="message">Message</label>
+                        <textarea id="message" name="yourmessage" placeholder="Write your message here"></textarea>
                      </div>
-                  </div>
-               </form>
-            </div>
-            <div>
-               <button class="choosebtn" onclick="changeform('register', 'sendmessage')">Already Member? Sign IN</button>
-               <button class="choosebtn" onclick="changeform('sendmessage', 'register')">Not Member? Register First</button>
-            </div>
+                     <br/>
+                     <div class="formgrid">
+                        <div>
+                           <input type="submit" name="submit" value="submit" class="minibutton" />
+                        </div>
+                        <div>
+                           <input type="reset" name="reset" value="reset" class="minibutton"/>
+                        </div>
+                     </div>
+                  </form>
+               </div>
+               <div id="logsign">
+                  <button class="choosebtn" onclick="changeform('register', 'sendmessage')">Already Member? Sign IN</button>
+                  <button class="choosebtn" onclick="changeform('sendmessage', 'register')">Not Member? Register First</button>
+               </div>
             </div>
             <div class="imagesize">
                   <img src="images/contact.png" alt="contact" class="myimages" />
             </div>
          </div>
-         
-         
       </div>
       <footer>
          Footer Here
       </footer>
-       
    </div>
    <script src="js/javascript.js"></script>
 </body>
