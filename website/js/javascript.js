@@ -101,11 +101,50 @@ function changeform(oldid, newid){
 function validateLogin(){
     var uname=document.getElementById("username").value;
     var pass=document.getElementById("yourpass").value;
+    var select=document.getElementById("query").value;
+    var check1=document.getElementById("pet1").checked;
+    var check2=document.getElementById("pet2").checked;
+    var check3=document.getElementById("pet3").checked;
+    var text=document.getElementById("message").value;
     if(uname == "" && pass == "") {
         document.getElementById("loginError").innerHTML="Username and Password is required!!!";
         document.getElementById("username").focus();
         document.getElementById("loginError").style.color="#ff0000";
         return false;
-
     } 
+    else if(uname == "" ) {
+        document.getElementById("loginError").innerHTML="Username is required!!";
+        document.getElementById("username").focus();
+        document.getElementById("loginError").style.color="#ff0000";
+        return false;
+    }
+    else if(pass == "") {
+        document.getElementById("loginError").innerHTML="Password is required!!";
+        document.getElementById("yourpass").focus();
+        document.getElementById("loginError").style.color="#ff0000";
+        return false;
+    }
+    else if(select == "") {
+        document.getElementById("loginError").innerHTML="Please Select Option!!";
+        document.getElementById("query").focus();
+        document.getElementById("loginError").style.color="#ff0000";
+        return false;
+    }
+    else if(check1==false && check2==false && check3==false ) {
+        document.getElementById("loginError").innerHTML="Choose the Pet Options!!";
+        document.getElementById("pet1").focus();
+        document.getElementById("loginError").style.color="#ff0000";
+        return false;
+    }
+    else if(text == "") {
+        document.getElementById("loginError").innerHTML="Message is required!!";
+        document.getElementById("message").focus();
+        document.getElementById("loginError").style.color="#ff0000";
+        return false;
+    }
+    else{
+        alert("Message sent. Thanks for coming to us.");
+        return true;
+    } 
+    
 }

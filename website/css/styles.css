@@ -822,7 +822,7 @@ input[type=text]:hover,input[type=email]:hover, textarea:hover{
 }
 .inputbox:focus, input[type=radio]:focus, input[type=checkbox]:focus, textarea:focus{
 	outline: none;
- 	box-shadow: #90b3c9 0px 7px 29px 0px;
+ 	box-shadow: #90b3c9 7px 7px 29px 7px;
 }
 input[type=radio]:hover, input[type=checkbox]:hover, select{
 	cursor: pointer;
