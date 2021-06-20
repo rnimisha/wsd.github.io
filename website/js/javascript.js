@@ -88,3 +88,11 @@ function closeimage(number){
     document.getElementById("fix").style.zIndex="9999";
 }
 
+function changeform(oldid, newid){
+    var id1=oldid;
+    var id2=newid
+    var oldform=document.getElementById(oldid);
+    oldform.style.display="none";
+    var newform=document.getElementById(newid);
+    newform.style.display="flex";
+}
