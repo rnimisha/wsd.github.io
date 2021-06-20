@@ -67,8 +67,10 @@
       <div id="aboutmain">
          <div id="contact">
             <div id="formid">
+               <div id="loginError">Welcome. Fill the form below and stay connected.</div>
                <div id="register">
-                  <form method="post" action="#" name="contactform" enctype="multipart/form-data">
+                  
+                  <form method="post" action="#" name="registerform" enctype="multipart/form-data" onsubmit="return validateRegister()">
                      <h2>Sign UP</h2>
                      <div class="formgrid">
                         <div>
@@ -134,7 +136,7 @@
                   </form>
                </div>
                <div id="sendmessage">
-                  <form method="post" action="#" name="contactform" enctype="multipart/form-data">
+                  <form method="post" action="#" name="contactform" enctype="multipart/form-data" onsubmit="return validateLogin()">
                      <h2>Contact Us</h2>
                      <div class="formgrid">
                         <div>
@@ -181,10 +183,10 @@
                      <br/>
                      <div class="formgrid">
                         <div>
-                           <input type="submit" name="submit" value="submit" class="minibutton" />
+                           <input type="submit" name="submit" value="Submit" class="minibutton" />
                         </div>
                         <div>
-                           <input type="reset" name="reset" value="reset" class="minibutton"/>
+                           <input type="reset" name="reset" value="Reset" class="minibutton"/>
                         </div>
                      </div>
                   </form>

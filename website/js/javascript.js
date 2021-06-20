@@ -87,7 +87,7 @@ function closeimage(number){
     modal.style.display = "none";
     document.getElementById("fix").style.zIndex="9999";
 }
-
+//change form
 function changeform(oldid, newid){
     var id1=oldid;
     var id2=newid
@@ -95,4 +95,17 @@ function changeform(oldid, newid){
     oldform.style.display="none";
     var newform=document.getElementById(newid);
     newform.style.display="flex";
+}
+
+//validate form
+function validateLogin(){
+    var uname=document.getElementById("username").value;
+    var pass=document.getElementById("yourpass").value;
+    if(uname == "" && pass == "") {
+        document.getElementById("loginError").innerHTML="Username and Password is required!!!";
+        document.getElementById("username").focus();
+        document.getElementById("loginError").style.color="#ff0000";
+        return false;
+
+    } 
 }
