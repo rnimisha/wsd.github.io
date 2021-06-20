@@ -68,7 +68,7 @@
          <div id="contact">
             <form method="post" action="#" name="contactform" enctype="multipart/form-data">
                <h2>Contact Us</h2>
-               <div id="formgrid">
+               <div class="formgrid">
                   <div>
                      <label for="fname">First Name</label>
                      <input type="text" id="fname" name="firstname" placeholder="First Name" class="inputbox"/>
@@ -88,28 +88,11 @@
                   <input type="text" id="address" name="youraddress" placeholder="Address" class="inputbox"/>
                </div>
                <div class="data">
-                  <label for="zip">Zip</label>
+                  <label for="zipcode">Zip</label>
                   <input type="text" id="zipcode" name="zip" placeholder="#####" class="inputbox"/>
                </div>
-               <div>
-                  <label for="pet">Pet</label>
-                  <div id="lineblock">
-                     <label for="pet1">
-                        <input type="radio" name="pet" value="D"  id="pet"/>
-                        Dog
-                     </label>
-                     <label for="pet2">
-                        <input type="radio" id="pet" name="pet" value="C" />
-                        Cat
-                     </label>
-                     <label for="pet3">
-                        <input type="radio" id="pet" name="pet" value="O" />
-                        Others
-                     </label>
-                  </div>
-               </div>
                <div >
-                  <label for="Query">Assistance for</label>
+                  <label for="query">Assistance for</label>
                   <select id="query" name="query" class="inputbox">
                      <option value="product">Product</option>
                      <option value="train">Training</option>
@@ -118,6 +101,35 @@
                      <option value="vet">Vet</option>
                      <option value="other">Other</option>
                   </select>
+               </div>
+               <div>
+                  <label>Pet</label>
+                  <div id="lineblock">
+                     <label for="pet1">
+                        <input type="radio" name="pet" value="D"  id="pet1"/>
+                        Dog
+                     </label>
+                     <label for="pet2">
+                        <input type="radio" id="pet2" name="pet" value="C" />
+                        Cat
+                     </label>
+                     <label for="pet3">
+                        <input type="radio" id="pet3" name="pet" value="O" />
+                        Others
+                     </label>
+                  </div>
+               </div>
+               <div class="data">
+                     <input type="checkbox" id="agreement" name="agree" value="agree"> I accept all the Terms of Use & Privacy Policy.
+               </div>
+               <br/>
+               <div class="formgrid">
+                  <div>
+                     <input type="submit" name="submit" value="submit" class="minibutton" />
+                  </div>
+                  <div>
+                     <input type="reset" name="reset" value="reset" class="minibutton"/>
+                  </div>
                </div>
             
             </form>

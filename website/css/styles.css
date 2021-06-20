@@ -756,7 +756,7 @@ figcaption{
 form{
 	width: 85%;
 }
-#formgrid{
+.formgrid{
 	display: grid;
 	grid-template-columns: 1fr 1fr;
 	grid-gap: 20px;
@@ -797,6 +797,10 @@ label{
   	margin-top: 3px;
   	width: 30%;
   	height: 20px;
+}
+input[type=radio]:focus, input[type=checkbox]:focus{
+	outline: none;
+ 	box-shadow: #88b8ff 0px 7px 29px 0px;
 }
 @media screen and (max-width: 992px){
 	#main, #aboutmain, #healthmain{
