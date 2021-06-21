@@ -156,6 +156,7 @@ function validateRegister()
     var lastname=document.getElementById("lname").value;
     var username=document.getElementById("uname").value;
     var password=document.getElementById("pass").value;
+    var confirm=document.getElementById("conpass").value;
 
     if(firstname == "" ) {
         document.getElementById("loginError").innerHTML="Firstname is required!!";
@@ -181,6 +182,14 @@ function validateRegister()
         document.getElementById("loginError").style.color="#ff0000";
         document.getElementById("loginError").scrollIntoView(true);
         document.getElementById("pass").focus();
+        return false;
+    }
+    else if (confirm!=password || confirm=="")
+    {
+        document.getElementById("loginError").innerHTML=" Password  dont match";
+        document.getElementById("loginError").style.color="#ff0000";
+        document.getElementById("loginError").scrollIntoView(true);
+        document.getElementById("conpass").focus();
         return false;
     }
 }
