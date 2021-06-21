@@ -258,3 +258,7 @@ function validateRegister()
     } 
     
 }
+
+function resetConfirm(){
+    confirm("Do you want to reset your form?")
+}
