@@ -95,6 +95,7 @@ function changeform(oldid, newid){
     oldform.style.display="none";
     var newform=document.getElementById(newid);
     newform.style.display="flex";
+    window.scrollTo(0, 0);
 }
 
 //validate form
@@ -147,4 +148,39 @@ function validateLogin(){
         return true;
     } 
     
+}
+
+function validateRegister()
+{
+    var firstname=document.getElementById("fname").value;
+    var lastname=document.getElementById("lname").value;
+    var username=document.getElementById("uname").value;
+    var password=document.getElementById("pass").value;
+
+    if(firstname == "" ) {
+        document.getElementById("loginError").innerHTML="Firstname is required!!";
+        document.getElementById("fname").focus();
+        document.getElementById("loginError").style.color="#ff0000";
+        return false;
+    }
+    else if(lastname == "" ) {
+        document.getElementById("loginError").innerHTML="Lastname is required!!";
+        document.getElementById("lname").focus();
+        document.getElementById("loginError").style.color="#ff0000";
+        return false;
+    }
+    else if(username == "" ) {
+        document.getElementById("loginError").innerHTML="Username is required!!";
+        document.getElementById("uname").focus();
+        document.getElementById("loginError").style.color="#ff0000";
+        document.getElementById("loginError").scrollIntoView(true);
+        return false;
+    }
+    else if(password == "") {
+        document.getElementById("loginError").innerHTML="Password is required!!";
+        document.getElementById("loginError").style.color="#ff0000";
+        document.getElementById("loginError").scrollIntoView(true);
+        document.getElementById("pass").focus();
+        return false;
+    }
 }

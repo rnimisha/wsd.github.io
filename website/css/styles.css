@@ -769,7 +769,10 @@ figcaption{
 #register, #sendmessage{
 	width: 100%;
 }
-#register{
+/*#register{
+	display: none;
+}*/
+#sendmessage{
 	display: none;
 }
 #formid{
