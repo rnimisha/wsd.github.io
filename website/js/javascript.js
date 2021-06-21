@@ -157,6 +157,13 @@ function validateRegister()
     var username=document.getElementById("uname").value;
     var password=document.getElementById("pass").value;
     var confirm=document.getElementById("conpass").value;
+    var emailid=document.getElementById("email").value;
+    var emailformat = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
+    var addr=document.getElementById("address").value;
+    var zip=document.getElementById("zipcode").value;
+    var radio1=document.getElementById("ans1").checked;
+    var radio2=document.getElementById("ans2").checked;
+    var check=document.getElementById("agreement").checked;
 
     if(firstname == "" ) {
         document.getElementById("loginError").innerHTML="Firstname is required!!";
@@ -186,10 +193,68 @@ function validateRegister()
     }
     else if (confirm!=password || confirm=="")
     {
-        document.getElementById("loginError").innerHTML=" Password  dont match";
+        document.getElementById("loginError").innerHTML=" Password  dont match!!";
         document.getElementById("loginError").style.color="#ff0000";
         document.getElementById("loginError").scrollIntoView(true);
         document.getElementById("conpass").focus();
         return false;
     }
+    else if(!emailid.match(emailformat))
+    {
+        document.getElementById("email").setCustomValidity("");
+        document.getElementById("loginError").innerHTML=" Email Format Incorrect!!";
+        document.getElementById("loginError").style.color="#ff0000";
+        document.getElementById("loginError").scrollIntoView(true);
+        document.getElementById("email").focus();
+        return false;
+    }
+    else if(addr==""){
+        document.getElementById("loginError").innerHTML=" Please Fill Your Address!!";
+        document.getElementById("loginError").style.color="#ff0000";
+        document.getElementById("loginError").scrollIntoView(true);
+        document.getElementById("address").focus();
+        return false;
+    }
+    else if (zip=="")
+    {
+        document.getElementById("loginError").innerHTML="Empty zip invalid!!!";
+        document.getElementById("loginError").style.color="#ff0000";
+        document.getElementById("loginError").scrollIntoView(true);
+        document.getElementById("zipcode").focus();
+        return false;
+    }
+    else if(zip.length!=5 )
+    {
+        document.getElementById("loginError").innerHTML=" Enter zip in format #####";
+        document.getElementById("loginError").style.color="#ff0000";
+        document.getElementById("loginError").scrollIntoView(true);
+        document.getElementById("zipcode").focus();
+        return false;
+    }
+    else if (isNaN(zip))
+    {
+        document.getElementById("loginError").innerHTML=" Enter zip in number!!";
+        document.getElementById("loginError").style.color="#ff0000";
+        document.getElementById("loginError").scrollIntoView(true);
+        document.getElementById("zipcode").focus();
+        return false;
+    }
+    else if(radio1==false && radio2==false){
+        document.getElementById("loginError").innerHTML="Please Choose one Option.";
+        document.getElementById("loginError").style.color="#ff0000";
+        document.getElementById("ans1").focus();
+        return false;
+    }
+    else if(check==false)
+    {
+        document.getElementById("loginError").innerHTML="Cant Register without Agreeing to our Terms.";
+        document.getElementById("loginError").style.color="#ff0000";
+        document.getElementById("agreement").focus();
+        return false;
+    }
+    else{
+        alert("Message sent. Thanks for coming to us.");
+        return true;
+    } 
+    
 }
