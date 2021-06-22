@@ -191,8 +191,26 @@ article{
 footer{
 	margin-top: 60px;
  	height: 30vh;
- 	background-color: #cfcbc2;
+ 	background-color: #696565 /*#cfcbc2*/;
  	border-top: 1px solid #e8e8e7;
+ 	display: grid;
+ 	grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 20px;
+    justify-items: center;
+    justify-content: space-between;
+    padding: 20px;
+}
+footer h3{
+	color: #fff;
+	font-size: 25px;
+
+}
+footer a{
+	text-decoration: none;
+	display: block;
+	text-align: center;
+	color: #fff;
+	font-style: normal;
 }
 .myimages{
 	width: 100%;
