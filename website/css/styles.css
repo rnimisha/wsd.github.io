@@ -229,13 +229,18 @@ footer a, footer .contactdata a{
 	width: 100%;
 	height: 100%;
 }
-footer .logoimg{
+.contactdata .logoimg{
 	background-color: #cfcbc2;
 	border-radius: 50px;
 	width: 35px;
 	height: 35px;
 	padding: 5px;
 	margin-bottom: -9px;
+}
+#blocklogo {
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
 }
 h2{
 	margin-top: 40px;
