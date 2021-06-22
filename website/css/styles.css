@@ -232,7 +232,7 @@ footer a, footer .contactdata a,#copyright{
 	width: 100%;
 	height: 100%;
 }
-.contactdata .logoimg{
+footer .contactdata .logoimg{
 	background-color: #cfcbc2;
 	border-radius: 50px;
 	width: 35px;
@@ -1116,8 +1116,8 @@ textarea{
 	footer > div{
 		margin-top: 10px;
 	}
-	footer a, footer p{
-		font-size: 14px;
+	footer a, footer p, footer .contactdata a{
+		font-size: 16px;
 	}
 	#sitemap a{
 		display: inline;
