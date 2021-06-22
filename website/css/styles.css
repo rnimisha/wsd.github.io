@@ -171,7 +171,7 @@ header h1{
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
-.button:hover, #showbutton:hover, .sliderbutton:hover, .minibutton:hover, .choosebtn:hover{
+.button:hover, #showbutton:hover, .sliderbutton:hover, .minibutton:hover, .choosebtn:hover, footer button:hover{
 	box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 	color: #fff;
 	cursor: pointer;
@@ -209,6 +209,9 @@ footer h3{
 	padding-bottom: 10px;
 
 }
+#sitemap a:hover{
+	text-decoration: underline;
+}
 footer a, footer .contactdata a,#copyright{
 	text-decoration: none;
 	display: block;
@@ -237,12 +240,18 @@ footer a, footer .contactdata a,#copyright{
 	padding: 5px;
 	margin-bottom: -9px;
 }
+
 #blocklogo {
 	display: flex;
 	flex-wrap: wrap;
 	flex-direction: row;
 	margin-top: 10px;
 	margin-left: 10px;
+}
+.logoimg:hover , .contactdata a:hover .logoimg{
+	box-shadow: #000 0px 5px 15px;
+	cursor: pointer;
+	border-radius: 50px;
 }
 footer button{
 	width: 75%;
@@ -256,6 +265,7 @@ footer button{
   	cursor: pointer;
 
 }
+
 #copyright{
 	grid-column: 1/4;
 	width: 100%;
@@ -1096,6 +1106,25 @@ textarea{
 		grid-template-columns: 2fr;
 		grid-gap: 0px;
 	}
+	footer{
+		display: flex;
+		flex-direction: column;
+		height: 100%;
+		justify-content: center;
+		align-items: center;
+	}
+	footer > div{
+		margin-top: 10px;
+	}
+	footer a, footer p{
+		font-size: 14px;
+	}
+	#sitemap a{
+		display: inline;
+		border-right: 2px solid #fff;
+		padding: 0px 10px;
+	}
+
 }
 
 @media screen and (max-width: 600px){ 
