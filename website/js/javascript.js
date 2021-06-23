@@ -23,11 +23,19 @@ function NewTabHealth()
 }
  
 document.getElementById("adopttab").addEventListener("click", NewTabAdopt);
-document.getElementById("newproduct").addEventListener("click", NewTabProduct);
 document.getElementById("newtrain").addEventListener("click", NewTabTrain);
-document.getElementById("newcontact").addEventListener("click", NewTab);
-document.getElementById("newtoy").addEventListener("click", NewTabProduct);
 document.getElementById("newhealth").addEventListener("click", NewTabHealth);
+
+var contactopen=document.getElementsByClassName("newcontact");
+for(var i=0; i<contactopen.length; i++)
+{
+    contactopen[i].addEventListener("click", NewTab);
+}
+var productopen=document.getElementsByClassName("newproduct");
+for(var i=0; i<productopen.length; i++)
+{
+    productopen[i].addEventListener("click", NewTabProduct);
+}
 
 //change image on hover
 function changeImage1(){
