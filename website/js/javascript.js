@@ -22,6 +22,13 @@ function NewTabHealth()
   window.open("health.html", "_blank");
 }
  
+document.getElementById("adopttab").addEventListener("click", NewTabAdopt);
+document.getElementById("newproduct").addEventListener("click", NewTabProduct);
+document.getElementById("newtrain").addEventListener("click", NewTabTrain);
+document.getElementById("newcontact").addEventListener("click", NewTab);
+document.getElementById("newtoy").addEventListener("click", NewTabProduct);
+document.getElementById("newhealth").addEventListener("click", NewTabHealth);
+
 //change image on hover
 function changeImage1(){
     document.getElementById("changeimg1").src="images/change1.jpeg";
