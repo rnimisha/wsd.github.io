@@ -52,43 +52,47 @@ for(var i=0; i<productopen.length; i++)
 }
 
 //change image on hover
-function changeImage1(){
-    document.getElementById("changeimg1").src="images/change1.jpeg";
+function changeImage(nn){
+    var numb=nn;
+    var source="images/change"+nn+".jpeg";
+    document.getElementById("changeimg"+numb).src=source;
 }
-function changeBack1(){
-    document.getElementById("changeimg1").src="images/adopt1.jpeg";
-}
-function changeImage2(){
-    document.getElementById("changeimg2").src="images/change2.jpeg";
-}
-function changeBack2(){
-    document.getElementById("changeimg2").src="images/adopt2.jpeg";
-}
-function changeImage3(){
-    document.getElementById("changeimg3").src="images/change3.jpeg";
-}
-function changeBack3(){
-    document.getElementById("changeimg3").src="images/adopt3.jpeg";
-}
-function changeImage4(){
-    document.getElementById("changeimg4").src="images/change4.jpeg";
-}
-function changeBack4(){
-    document.getElementById("changeimg4").src="images/adopt4.jpeg";
-}
-function changeImage5(){
-    document.getElementById("changeimg5").src="images/change5.jpeg";
-}
-function changeBack5(){
-    document.getElementById("changeimg5").src="images/adopt5.jpeg";
-}
-function changeImage6(){
-    document.getElementById("changeimg6").src="images/change6.jpeg";
-}
-function changeBack6(){
-    document.getElementById("changeimg6").src="images/adopt6.jpeg";
+function changeBack(nn){
+    var numb=nn;
+    var source="images/adopt"+nn+".jpeg";
+    document.getElementById("changeimg"+numb).src=source;
 }
 
+var image1=document.getElementById("changeimg1");
+if(image1){
+    image1.addEventListener("mouseover", () => {changeImage("1");}, false);
+    image1.addEventListener("mouseout", () => {changeBack("1");}, false);
+}
+var image2=document.getElementById("changeimg2");
+if(image2){
+    image2.addEventListener("mouseover", () => {changeImage("2");}, false);
+    image2.addEventListener("mouseout", () => {changeBack("2");}, false);
+}
+var image3=document.getElementById("changeimg3");
+if(image3){
+    image3.addEventListener("mouseover", () => {changeImage("3");}, false);
+    image3.addEventListener("mouseout", () => {changeBack("3");}, false);
+}
+var image4=document.getElementById("changeimg4");
+if(image4){
+    image4.addEventListener("mouseover", () => {changeImage("4");}, false);
+    image4.addEventListener("mouseout", () => {changeBack("4");}, false);
+}
+var image5=document.getElementById("changeimg5");
+if(image5){
+    image5.addEventListener("mouseover", () => {changeImage("5");}, false);
+    image5.addEventListener("mouseout", () => {changeBack("5");}, false);
+}
+var image6=document.getElementById("changeimg6");
+if(image6){
+    image6.addEventListener("mouseover", () => {changeImage("6");}, false);
+    image6.addEventListener("mouseout", () => {changeBack("6");}, false);
+}
 //view more 
 function moreView() {
   var shows = document.getElementById("showmore");
