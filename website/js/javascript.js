@@ -62,7 +62,6 @@ function changeBack(nn){
     var source="images/adopt"+nn+".jpeg";
     document.getElementById("changeimg"+numb).src=source;
 }
-
 var image1=document.getElementById("changeimg1");
 if(image1){
     image1.addEventListener("mouseover", () => {changeImage("1");}, false);
@@ -93,6 +92,9 @@ if(image6){
     image6.addEventListener("mouseover", () => {changeImage("6");}, false);
     image6.addEventListener("mouseout", () => {changeBack("6");}, false);
 }
+
+
+
 //view more 
 function moreView() {
   var shows = document.getElementById("showmore");
@@ -103,9 +105,11 @@ function moreView() {
     shows.style.display = "none";
     document.getElementById("showbutton").innerHTML = "Show More";
   }
-
 }
-
+var showbtn = document.getElementById("showbutton");
+if(showbtn){
+  showbtn.addEventListener("click", moreView, false);
+}
 //zoom in out images
 function zoommyimage(number){
     var no=number;
@@ -120,6 +124,8 @@ function closeimage(number){
     modal.style.display = "none";
     document.getElementById("fix").style.zIndex="9999";
 }
+
+
 //change form
 function changeform(oldid, newid){
     var id1=oldid;
