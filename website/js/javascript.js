@@ -22,19 +22,33 @@ function NewTabHealth()
   window.open("health.html", "_blank");
 }
  
-document.getElementById("adopttab").addEventListener("click", NewTabAdopt);
-document.getElementById("newtrain").addEventListener("click", NewTabTrain);
-document.getElementById("newhealth").addEventListener("click", NewTabHealth);
+
+var adoptopen = document.getElementById("adopttab");
+if(adoptopen){
+  adoptopen.addEventListener("click", NewTabAdopt, false);
+}
+var trainopen=document.getElementById("newtrain");
+if(trainopen){
+  trainopen.addEventListener("click", NewTabTrain, false);
+}
+var healthopen=document.getElementById("newhealth");
+if(healthopen){
+    healthopen.addEventListener("click", NewTabHealth);
+}
 
 var contactopen=document.getElementsByClassName("newcontact");
 for(var i=0; i<contactopen.length; i++)
 {
-    contactopen[i].addEventListener("click", NewTab);
+    if(contactopen[i]){
+        contactopen[i].addEventListener("click", NewTab, false);
+    }
 }
 var productopen=document.getElementsByClassName("newproduct");
 for(var i=0; i<productopen.length; i++)
 {
-    productopen[i].addEventListener("click", NewTabProduct);
+    if(productopen[i]){
+        productopen[i].addEventListener("click", NewTabProduct, false);
+    }
 }
 
 //change image on hover
