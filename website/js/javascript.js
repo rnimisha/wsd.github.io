@@ -112,24 +112,33 @@ if(showbtn){
   showbtn.addEventListener("click", moreView, false);
 }
 
-function changeGallery() {
+function changeGallery2() {
   var page = document.getElementById("gallerymain1");
   var page2 = document.getElementById("gallerymain2");
   if (!page2.style.display ||page2.style.display == "none") {
     page2.style.display = "grid";
     page.style.display = "none";
-  } else {
-    page.style.display = "grid";
-    page2.style.display = "none";
+    document.getElementById("gallerypg1").style.boxShadow="none";
+    document.getElementById("gallerypg2").style.boxShadow="rgba(0, 0, 0, 0.35) 0px 5px 15px";
   }
 }
-
-var gallerybtns = document.getElementsByClassName("gallerybtn");
-for(var i=0; i<gallerybtns.length; i++)
-{
-    if(gallerybtns[i]){
-        gallerybtns[i].addEventListener("click", changeGallery, false);
-    }
+function changeGallery1() {
+  var page = document.getElementById("gallerymain1");
+  var page2 = document.getElementById("gallerymain2");
+  if (!page.style.display ||page.style.display == "none") {
+    page.style.display = "grid";
+    page2.style.display = "none";
+    document.getElementById("gallerypg2").style.boxShadow="none";
+    document.getElementById("gallerypg1").style.boxShadow="rgba(0, 0, 0, 0.35) 0px 5px 15px";
+  }
+}
+var gallerybtn1 = document.getElementById("gallerypg1");
+if(gallerybtn1){
+    gallerybtn1.addEventListener("click", changeGallery1, false);
+}
+var gallerybtn2 = document.getElementById("gallerypg2");
+if(gallerybtn2){
+    gallerybtn2.addEventListener("click", changeGallery2, false);
 }
 //zoom in out images
 function zoommyimage(number){
