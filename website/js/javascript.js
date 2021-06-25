@@ -119,6 +119,8 @@ function changeGallery2() {
     page2.style.display = "grid";
     page.style.display = "none";
     document.getElementById("gallerypg1").style.boxShadow="none";
+    document.getElementById("gallerypg1").style.backgroundColor="#f8f4e9";
+    document.getElementById("gallerypg2").style.backgroundColor="#90b3c9";
     document.getElementById("gallerypg2").style.boxShadow="rgba(0, 0, 0, 0.35) 0px 5px 15px";
   }
 }
@@ -129,6 +131,8 @@ function changeGallery1() {
     page.style.display = "grid";
     page2.style.display = "none";
     document.getElementById("gallerypg2").style.boxShadow="none";
+    document.getElementById("gallerypg2").style.backgroundColor="#f8f4e9";
+    document.getElementById("gallerypg1").style.backgroundColor="#90b3c9";
     document.getElementById("gallerypg1").style.boxShadow="rgba(0, 0, 0, 0.35) 0px 5px 15px";
   }
 }
