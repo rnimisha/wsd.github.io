@@ -103,6 +103,8 @@ header h1{
         display: block;
         min-height: 6vh;
         background-color:#c7d9e5;
+        min-width: 25vh;
+		margin-left: -30px;
 }
 #navigation ul li ul.dropmenu li a{
         text-align: center;
@@ -1082,6 +1084,7 @@ textarea{
 	}
 	#navigation ul li ul.dropmenu li {
 		min-width: 30vh;
+		margin-left: -60px;
 	}
 	.carousel-inner {
 		height: 400px;
