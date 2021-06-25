@@ -423,7 +423,7 @@ figcaption{
 }
 
 
-#aboutmain, #healthmain, #gallerymain{
+#aboutmain, #healthmain, #gallerymain1, #gallerymain2{
 	width: 80%;
 	margin: auto auto;
 	display: grid;
@@ -434,6 +434,9 @@ figcaption{
     justify-content: space-between;
     margin-top: 23vh;
     z-index: 9998;
+}
+#gallerymain2{
+	display: none;
 }
 #aboutus{
 	grid-column: 1/5;
@@ -796,7 +799,7 @@ figcaption{
 	background-color: #e6b8b8;
 }
 
-#gallerymain{
+#gallerymain1, #gallerymain2{
 	margin-top: 25vh;
 	justify-items: stretch;
 	align-items: stretch;
@@ -817,7 +820,7 @@ figcaption{
 	height: 100%;
 }
 
-#gallerymain .myimages:hover{
+#gallerymain1 .myimages:hover, #gallerymain2 .myimages:hover{
 	opacity: 0.8;
 	width: 94%;
 	height: 94%;
@@ -839,6 +842,7 @@ figcaption{
 	background-color: #000;
 
 }
+
 .imagesize {
     display: grid;
     height: 100%;
@@ -849,12 +853,15 @@ figcaption{
     margin: auto;
     animation-name: zoom;
   	animation-duration: 1s;
+  	padding: 5%;
 }
 
 @keyframes zoom {
   from {transform:scale(0)} 
   to {transform:scale(1)}
 }
+
+
 .close{
   	position: absolute;
   	top: 25px;
@@ -1033,12 +1040,14 @@ textarea{
 	padding: 20px 0px 0px 20px;
 	text-align: center;
 }
-
+#itemform{
+	display: none;
+}
 @media screen and (max-width: 992px){
 	#main, #aboutmain, #healthmain{
 		margin-top: auto;
 	}
-	#gallerymain{
+	#gallerymain1{
 		margin-top: 5vh;
 	}
 	#fix{
@@ -1144,7 +1153,7 @@ textarea{
 	#viewmore{
 		grid-row: 9/10;
 	}
-	#gallerymain{
+	#gallerymain1{1
 		margin-top: 5vh;
 		grid-template-columns: 1fr 1fr;
 	}
@@ -1321,7 +1330,7 @@ textarea{
 	width: 90%;
 	height: 12vh;
 	}
-	#gallerymain{
+	#gallerymain1{
 		margin-top: 5vh;
 		grid-template-columns: 1fr;
 	}

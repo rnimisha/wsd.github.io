@@ -22,7 +22,7 @@ function NewTabHealth()
   window.open("health.html", "_blank");
 }
  
-
+//event listeners
 var adoptopen = document.getElementById("adopttab");
 if(adoptopen){
   adoptopen.addEventListener("click", NewTabAdopt, false);
@@ -62,6 +62,7 @@ function changeBack(nn){
     var source="images/adopt"+nn+".jpeg";
     document.getElementById("changeimg"+numb).src=source;
 }
+//eventlisteners
 var image1=document.getElementById("changeimg1");
 if(image1){
     image1.addEventListener("mouseover", () => {changeImage("1");}, false);
@@ -125,6 +126,7 @@ function closeimage(number){
     var modal = document.getElementById("zoom"+no);
     modal.style.display = "none";
     document.getElementById("fix").style.zIndex="9999";
+
 }
 
 
@@ -190,6 +192,7 @@ function validateLogin(){
     } 
     
 }
+
 
 function validateRegister()
 {
