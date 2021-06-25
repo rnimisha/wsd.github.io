@@ -222,11 +222,11 @@ footer h3{
 	font-style: normal;
 	font-size: 17px;
 }
- footer .contactdata{
- 	margin-top: 0px;
+footer .contactdata{
+	margin-top: 0px;
 
- }
- footer .contactdata a{
+}
+footer .contactdata a{
 	text-align: left;
 
 }
@@ -250,11 +250,12 @@ footer .contactdata .logoimg{
 	margin-top: 10px;
 	margin-left: 10px;
 }
-.logoimg:hover , .contactdata a:hover .logoimg{
+footer .logoimg:hover , footer .contactdata a:hover .logoimg{
 	box-shadow: #000 0px 5px 15px;
 	cursor: pointer;
 	border-radius: 50px;
 }
+
 footer button{
 	width: 75%;
 	margin: 10%;
@@ -763,7 +764,10 @@ figcaption{
 	display: none;
 	animation-duration: 0.5s;
     animation-name: slideup;
+    -webkit-animation-duration: 1s;
+    -webkit-animation-name: slideup;
 }
+
 @keyframes slideup{
 	from{
         margin-top: 100%;
@@ -956,6 +960,9 @@ input[type=text]:hover,input[type=email]:hover, textarea:hover{
 	outline: none;
  	box-shadow: #90b3c9 7px 7px 29px 7px;
 }
+.inputbox:focus .errorred{
+	box-shadow: #eb3f3f 7px 7px 29px 7px;
+}
 input[type=radio]:hover, input[type=checkbox]:hover, select{
 	cursor: pointer;
 }
@@ -1004,6 +1011,14 @@ textarea{
 	margin-right: 30px;
 	margin-bottom: -5px;
 }
+#sideflex .logoimg{
+	animation-name: rotatein;
+    animation-duration:0.3s;
+}
+#sideflex .logoimg:hover, #sideflex .contactdata a:hover .logoimg{
+	animation-name: rotateout;
+    animation-duration:0.3s;
+}
 .contactdata{
 	margin: 20px;
 	font-size: 20px;
@@ -1018,6 +1033,7 @@ textarea{
 	padding: 20px 0px 0px 20px;
 	text-align: center;
 }
+
 @media screen and (max-width: 992px){
 	#main, #aboutmain, #healthmain{
 		margin-top: auto;
