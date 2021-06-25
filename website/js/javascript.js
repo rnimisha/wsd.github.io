@@ -123,6 +123,7 @@ function changeGallery2() {
     document.getElementById("gallerypg2").style.backgroundColor="#90b3c9";
     document.getElementById("gallerypg2").style.boxShadow="rgba(0, 0, 0, 0.35) 0px 5px 15px";
   }
+  document.getElementById("divtop").scrollIntoView();
 }
 function changeGallery1() {
   var page = document.getElementById("gallerymain1");
@@ -135,6 +136,7 @@ function changeGallery1() {
     document.getElementById("gallerypg1").style.backgroundColor="#90b3c9";
     document.getElementById("gallerypg1").style.boxShadow="rgba(0, 0, 0, 0.35) 0px 5px 15px";
   }
+  document.getElementById("divtop").scrollIntoView();
 }
 var gallerybtn1 = document.getElementById("gallerypg1");
 if(gallerybtn1){
@@ -144,6 +146,7 @@ var gallerybtn2 = document.getElementById("gallerypg2");
 if(gallerybtn2){
     gallerybtn2.addEventListener("click", changeGallery2, false);
 }
+
 //zoom in out images
 function zoommyimage(number){
     var no=number;
