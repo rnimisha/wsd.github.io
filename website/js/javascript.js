@@ -112,7 +112,25 @@ if(showbtn){
   showbtn.addEventListener("click", moreView, false);
 }
 
+function changeGallery() {
+  var page = document.getElementById("gallerymain1");
+  var page2 = document.getElementById("gallerymain2");
+  if (!page2.style.display ||page2.style.display == "none") {
+    page2.style.display = "grid";
+    page.style.display = "none";
+  } else {
+    page.style.display = "grid";
+    page2.style.display = "none";
+  }
+}
 
+var gallerybtns = document.getElementsByClassName("gallerybtn");
+for(var i=0; i<gallerybtns.length; i++)
+{
+    if(gallerybtns[i]){
+        gallerybtns[i].addEventListener("click", changeGallery, false);
+    }
+}
 //zoom in out images
 function zoommyimage(number){
     var no=number;
