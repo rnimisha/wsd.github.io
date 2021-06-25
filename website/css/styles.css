@@ -16,6 +16,8 @@ body{
 a{
 	font-style: italic;
 }
+a:link{color: blue;}
+a:visited{color: #aa32f0;}
 
 #container{
 	display: flex;
@@ -212,7 +214,7 @@ footer h3{
 #sitemap a:hover{
 	text-decoration: underline;
 }
-footer a, footer .contactdata a,#copyright{
+#sitemap a, footer .contactdata a,#copyright{
 	text-decoration: none;
 	display: block;
 	text-align: center;
@@ -354,6 +356,8 @@ h3{
 #bottomleftaside:hover .playpng, #bottomrightaside:hover .playpng{
 	opacity: 1;
 	cursor: pointer;
+	animation-name: zoom;
+  	animation-duration: 0.6s;
 }
 article > h2 {
 	margin-top: 15px;
@@ -598,6 +602,7 @@ figcaption{
 	height: 120px;
 	border-radius:10px;
 	margin: 10px 20px 10px 10px;
+
 }
 .caption{
 	position: absolute;
@@ -611,16 +616,23 @@ figcaption{
   	transition: .5s ease;
  	background-color: #fff;
 
+
 }
 .caption h3 {
 	text-align: center;
 	padding-top: 50px;
 	font-size: 40px;
 	color: #000;
+
 }
 #speciality1:hover .caption,#speciality2:hover .caption,#speciality3:hover .caption,#speciality4:hover .caption{
   opacity: 0.7;
 }
+#speciality1:hover h3, #speciality2:hover h3, #speciality3:hover h3, #speciality4:hover h3{
+	animation-duration: 1s;
+    animation-name: zoom;
+}
+
 #staff{
 	grid-row: 5/6;
 	grid-column: 1/5;
@@ -706,13 +718,37 @@ figcaption{
 	min-height: 150px;
 	margin: 20px 10px 20px 0px;
 	padding-bottom: 20px;
+
 }
 .adoptimg{
 	width: 80%;
 	height: 200px;
 	border-radius:10px;
 	margin:10%;
+	animation-name: rotatein;
+    animation-duration:0.3s;
 }
+@keyframes rotatein {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+@keyframes rotateout {
+    from {
+        transform: rotate(360deg);
+    }
+    to {
+        transform: rotate(0deg);
+    }
+}
+.adoptimg:hover{
+	animation-name: rotateout;
+    animation-duration:0.3s;
+}
+
 .adoptpet h3{
 	margin-top: -30px;
 }
@@ -725,6 +761,16 @@ figcaption{
 	flex-wrap: wrap;
 	justify-content: space-between;
 	display: none;
+	animation-duration: 0.5s;
+    animation-name: slideup;
+}
+@keyframes slideup{
+	from{
+        margin-top: 100%;
+    }
+    to{
+        margin-top: 0%;
+    }
 }
 #viewmore{
 	grid-column: 1/5;
@@ -788,7 +834,6 @@ figcaption{
 	overflow: auto;
 	background-color: #000;
 
-
 }
 .imagesize {
     display: grid;
@@ -799,8 +844,9 @@ figcaption{
     max-height: 100vh;
     margin: auto;
     animation-name: zoom;
-  	animation-duration: 0.6s;
+  	animation-duration: 1s;
 }
+
 @keyframes zoom {
   from {transform:scale(0)} 
   to {transform:scale(1)}
@@ -810,18 +856,17 @@ figcaption{
   	top: 25px;
   	right: 45px;
   	color: #fff;
-  	font-size: 50px;
+  	font-size: 70px;
   	font-weight: bold;
   	transition: .5s ease;
 }
 
-.close:hover,
-.close:focus {
-  font-size: 70px;
+.close:hover{
   text-decoration: none;
   cursor: pointer;
-}
+  transform: rotate(360deg);
 
+}
 
 #contact{
 	margin-top: 30px;
@@ -1290,3 +1335,4 @@ textarea{
 		font-size: 13px;
 	}
 } 
+

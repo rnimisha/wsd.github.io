@@ -110,6 +110,8 @@ var showbtn = document.getElementById("showbutton");
 if(showbtn){
   showbtn.addEventListener("click", moreView, false);
 }
+
+
 //zoom in out images
 function zoommyimage(number){
     var no=number;
