@@ -19,6 +19,8 @@ a{
 a:link{color: blue;}
 a:visited{color: #aa32f0;}
 
+
+
 #container{
 	display: flex;
 	flex-direction: column;
@@ -119,6 +121,9 @@ header h1{
 .down{
 	margin-top: 4px;
 	font-size: 15px;
+}
+.down:after{
+  content: '\25BC';
 }
 #active{
 	background-color: #90b3c9;
@@ -308,6 +313,10 @@ h2{
 	color: #7d3933;
 	text-align: center;
 	margin-bottom: 10px;
+}
+#extracolor{
+	color: #631d1d;
+	font-weight: bold;
 }
 p{
 	/*text-align: justify;*/
