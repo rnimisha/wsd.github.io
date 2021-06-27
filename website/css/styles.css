@@ -1106,6 +1106,16 @@ textarea{
 #itemform{
 	display: none;
 }
+#maps{
+	grid-column: 1/5;
+	min-height: 50vh;
+}
+iframe{
+	width: 100%;
+	margin-top: 5vh;
+	height: 85%;
+	border-radius: 20px;
+}
 @media screen and (max-width: 992px){
 	#main, #aboutmain, #healthmain{
 		margin-top: auto;
