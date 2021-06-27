@@ -42,7 +42,7 @@ header{
     justify-content: center;
     flex-wrap: wrap;
 }
-#logo { 
+.logo { 
     height: 10vh;
     margin-bottom: 5px;
  }
@@ -52,6 +52,7 @@ header h1{
 	font-size: 8vh;
 	color: #7d3933;
 	padding-top: 15px;
+	text-align: center;
 }
 
 #navigation{
@@ -975,10 +976,8 @@ figcaption{
 #register{
 	display: none;
 }
-/*#sendmessage{
-	display: none;
-}
-*/#formid{
+
+#formid{
 	background-color: #e6b8b8;
 	border-radius: 20px;
 	box-shadow: #9e957b 0px 1px 2px 0px, #9e957b 0px 2px 6px 2px,#9e957b 0px 1px 2px 0px, #9e957b 0px 2px 6px 2px;
@@ -1066,6 +1065,7 @@ textarea{
 #logsign{
 	padding: 0px 10px 30px 20px;
 }
+
 #sideflex{
 	display: flex;
 	flex-direction: column;
@@ -1247,9 +1247,24 @@ iframe{
 		grid-template-columns: 5fr;
 		grid-gap: 20px;
 	}
+	#formid{
+		grid-column: 1/5;
+		grid-row: 1/2;
+	}
+	#sideflex{
+		grid-column: 1/5;
+		grid-row: 2/3;
+	}
+	#maps{
+		grid-row:3/4 ;
+	}
 	.formgrid{
 		grid-template-columns: 2fr;
 		grid-gap: 0px;
+	}
+	#contact .minibutton{
+		height: 4vh;
+		width: 95%;
 	}
 	footer{
 		display: flex;
