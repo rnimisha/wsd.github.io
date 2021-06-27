@@ -252,7 +252,7 @@ footer h1{
 	text-decoration: none;
 	display: block;
 	text-align: center;
-	color: #cfcbc2;
+	color: #fff;
 	font-style: normal;
 	font-size: 17px;
 }
@@ -302,11 +302,11 @@ footer button{
 	width: 75%;
 	margin: 10%;
 	height: 8vh;
-	border: 8px solid #cfcbc2;;
+	border: 8px solid #cfcbc2;
   	border-radius: 10px;
   	font-size: 17px;
   	background-color: #696565;
-  	color: #cfcbc2;;
+  	color: #fff;
   	cursor: pointer;
 
 }
