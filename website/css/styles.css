@@ -52,7 +52,9 @@ header h1{
 	font-size: 8vh;
 	color: #7d3933;
 	padding-top: 15px;
-}#navigation{
+}
+
+#navigation{
 	background-color:#c7d9e5;
 }
 #navigation a{
@@ -227,22 +229,41 @@ footer{
 
 }
 footer h3{
-	color: #fff;
-	font-size: 25px;
+	color: #fad787;
+	font-size: 30px;
 	padding-bottom: 10px;
 
+}
+#footerhead{
+	display: inline-flex;
+	justify-content: center;
+	justify-items: center;
+}
+footer h1{
+	font-family: 'Luckiest Guy', cursive;
+	font-size: 5vh;
+	color: #fad787;
+	padding-top: 30px;
 }
 #sitemap a:hover{
 	text-decoration: underline;
 }
-#sitemap a, footer .contactdata a,#copyright{
+#sitemap a, footer .contactdata a,#copyright, #personal{
 	text-decoration: none;
 	display: block;
 	text-align: center;
-	color: #fff;
+	color: #cfcbc2;
 	font-style: normal;
 	font-size: 17px;
 }
+#personal{
+	margin-top: 20px;
+}
+#sitemap a{
+		display: inline;
+		/*border-right: 2px solid #fff;*/
+		padding: 0px 3px;
+	}
 footer .contactdata{
 	margin-top: 0px;
 
@@ -281,11 +302,11 @@ footer button{
 	width: 75%;
 	margin: 10%;
 	height: 8vh;
-	border: 8px solid #fff;
+	border: 8px solid #cfcbc2;;
   	border-radius: 10px;
   	font-size: 17px;
   	background-color: #696565;
-  	color: #fff;
+  	color: #cfcbc2;;
   	cursor: pointer;
 
 }
@@ -297,7 +318,7 @@ footer button{
 }
 footer hr{
 	width: 100%;
-	border: 1px solid #a6a4a4;
+	border: 1px solid /*#a6a4a4*/ #cfcbc2;;
 	margin-bottom: 10px;
 }
 h2{
@@ -1233,11 +1254,7 @@ textarea{
 	footer a, footer p, footer .contactdata a{
 		font-size: 16px;
 	}
-	#sitemap a{
-		display: inline;
-		border-right: 2px solid #fff;
-		padding: 0px 10px;
-	}
+	
 
 }
 
