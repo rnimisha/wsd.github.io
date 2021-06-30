@@ -379,7 +379,7 @@ if(otherpet){
 let add=document.getElementById("addpet");
 let petname=document.getElementById("pets");
 //retrives item entered and makes it in list
-function addmoreitem(){
+function addmorepet(){
     let enteredname=document.getElementById("listpet").value;
     let listtext=document.createTextNode(enteredname);
     let list=document.createElement("li");
@@ -402,5 +402,5 @@ function addmoreitem(){
 
 //add more data on click
 if(add){
-  add.addEventListener("click", addmoreitem, false);
+  add.addEventListener("click", addmorepet, false);
 }
