@@ -183,7 +183,7 @@ header h1{
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
-.button:hover, #showbutton:hover, .sliderbutton:hover, .minibutton:hover, .choosebtn:hover, footer button:hover{
+.button:hover, #showbutton:hover, .sliderbutton:hover, .minibutton:hover, .choosebtn:hover, footer button:hover, #dynamicList ul li button:hover{
 	box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 	color: #fff;
 	cursor: pointer;
@@ -513,7 +513,7 @@ figcaption{
 #aboutpar p{
 	margin-left: 0px;
 }
-.minibutton{
+.minibutton, #dynamicList ul li button{
   border: none;
   border-radius: 10px;
   background-color:#90b3c9;
@@ -1171,6 +1171,15 @@ iframe{
 /*styling list for other pet*/
 #dynamicList ul{
 	list-style-type: none;
+}
+#dynamicList ul li{
+	margin-top: 10px;
+}
+#dynamicList ul li button{
+	margin: 0px 0px 0px 10px;
+	height: auto;
+	padding: 3px;
+	width: auto;
 }
 @media screen and (max-width: 992px){
 	#main, #aboutmain, #healthmain{

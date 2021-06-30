@@ -206,18 +206,33 @@ function validateLogin(){
         document.getElementById("loginError").innerHTML="Please Select Option!!";
         document.getElementById("query").focus();
         document.getElementById("loginError").style.color="#ff0000";
+        document.getElementById("loginError").scrollIntoView(true);
         return false;
     }
     else if(check1==false && check2==false && check3==false ) {
         document.getElementById("loginError").innerHTML="Choose the Pet Options!!";
         document.getElementById("pet1").focus();
         document.getElementById("loginError").style.color="#ff0000";
+        document.getElementById("loginError").scrollIntoView(true);
         return false;
+    }
+    else if(check3==true)
+    {
+        var listcontent=document.getElementById("pets").innerHTML;
+        if(listcontent=="")
+        {
+            document.getElementById("loginError").innerHTML="Name is required!!";
+            document.getElementById("listpet").focus();
+            document.getElementById("loginError").style.color="#ff0000";
+            document.getElementById("loginError").scrollIntoView(true);
+            return false;
+        }
     }
     else if(text == "") {
         document.getElementById("loginError").innerHTML="Message is required!!";
         document.getElementById("message").focus();
         document.getElementById("loginError").style.color="#ff0000";
+        document.getElementById("loginError").scrollIntoView(true);
         return false;
     }
     else{
@@ -378,14 +393,14 @@ function addmoreitem(){
     list.appendChild(listtext);
     list.appendChild(delbtn);
 
-    //delete item
+    //delete item on click
     delbtn.onclick=function()
     {
         petname.removeChild(list);
     }
 }
 
-//admoredata on click
+//add more data on click
 if(add){
   add.addEventListener("click", addmoreitem, false);
 }
