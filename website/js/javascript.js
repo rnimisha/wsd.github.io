@@ -336,12 +336,12 @@ function validateRegister()
     } 
     
 }
-
+//show confirm  box before resetting
 function resetConfirm(){
     confirm("Do you want to reset your form?")
 }
 
-
+//display dynamic list if user chooses others in checkbox
 var otherpet = document.getElementById("pet3");
 function show(){
     var list=document.getElementById("dynamicList");
@@ -358,4 +358,34 @@ function show(){
 
 if(otherpet){
     otherpet.addEventListener("click", show, false);
+}
+
+
+let add=document.getElementById("addpet");
+let petname=document.getElementById("pets");
+//retrives item entered and makes it in list
+function addmoreitem(){
+    let enteredname=document.getElementById("listpet").value;
+    let listtext=document.createTextNode(enteredname);
+    let list=document.createElement("li");
+
+    //deleting button
+    let delbtn=document.createElement("button");
+    delbtn.textContent="Remove";
+
+    //new item with delete button
+    petname.appendChild(list);
+    list.appendChild(listtext);
+    list.appendChild(delbtn);
+
+    //delete item
+    delbtn.onclick=function()
+    {
+        petname.removeChild(list);
+    }
+}
+
+//admoredata on click
+if(add){
+  add.addEventListener("click", addmoreitem, false);
 }

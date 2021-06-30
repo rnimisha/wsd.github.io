@@ -1130,22 +1130,33 @@ iframe{
 	display: none;
 	width: 100%;
 	grid-template-columns: 1fr 1fr;
-	margin-top: 10px;
-	margin-left: 8px;
+	margin-top: 5px;
 }
-
-.listgrid1{
+/*for label of dynamic list enter box*/
+#listgrid1{
 	grid-column: 1/3;
 	grid-row: 1/2;
+	margin-left: 8px;
 }
-.listgrid2{
+/*for box to enter item name*/
+#listgrid2{
 	margin-top: 10px;
 	grid-column: 1/2;
 	grid-row: 2/3;
 }
-.listgrid3{
+/*for add item button */
+#listgrid3{
 	grid-column: 2/3;
 	grid-row: 2/3;
+}
+/*for the pet list*/
+#listTitle{
+	grid-column: 1/3;
+	grid-row: 3/4;
+	width: 100%;
+	display: block;
+	margin: auto;
+	text-align: center;
 }
 /*for button in dynamic list*/
 #dynamicList .minibutton{
@@ -1154,7 +1165,13 @@ iframe{
 	padding: 8px;
 	width: 90%
 }
-
+#dynamicList h4{
+	font-size: 25px;
+}
+/*styling list for other pet*/
+#dynamicList ul{
+	list-style-type: none;
+}
 @media screen and (max-width: 992px){
 	#main, #aboutmain, #healthmain{
 		margin-top: auto;
