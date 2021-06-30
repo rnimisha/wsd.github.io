@@ -347,7 +347,7 @@ function show(){
     var list=document.getElementById("dynamicList");
     if(otherpet.checked==true)
     {
-        list.style.display="flex";
+        list.style.display="grid";
     }
     else
     {
@@ -355,13 +355,6 @@ function show(){
     }
 }
 
-
-// if(otherpet){
-//     if((otherpet.checked)==false)
-//     {
-//         otherpet.addEventListener("click", show, false);
-//     }
-// }
 
 if(otherpet){
     otherpet.addEventListener("click", show, false);
