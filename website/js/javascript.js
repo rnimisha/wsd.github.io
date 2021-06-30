@@ -341,11 +341,28 @@ function resetConfirm(){
     confirm("Do you want to reset your form?")
 }
 
-function show(){
-    alert("sdjc");
-}
 
 var otherpet = document.getElementById("pet3");
+function show(){
+    var list=document.getElementById("dynamicList");
+    if(otherpet.checked==true)
+    {
+        list.style.display="flex";
+    }
+    else
+    {
+        list.style.display="none";
+    }
+}
+
+
+// if(otherpet){
+//     if((otherpet.checked)==false)
+//     {
+//         otherpet.addEventListener("click", show, false);
+//     }
+// }
+
 if(otherpet){
     otherpet.addEventListener("click", show, false);
 }

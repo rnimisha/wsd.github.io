@@ -1123,6 +1123,10 @@ iframe{
 	height: 85%;
 	border-radius: 20px;
 }
+/*for dynamic list when checkbox checked*/
+#dynamicList{
+	display: none;
+}
 @media screen and (max-width: 992px){
 	#main, #aboutmain, #healthmain{
 		margin-top: auto;
