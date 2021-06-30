@@ -341,4 +341,11 @@ function resetConfirm(){
     confirm("Do you want to reset your form?")
 }
 
+function show(){
+    alert("sdjc");
+}
 
+var otherpet = document.getElementById("pet3");
+if(otherpet){
+    otherpet.addEventListener("click", show, false);
+}

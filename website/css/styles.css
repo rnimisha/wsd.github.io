@@ -217,7 +217,7 @@ article{
 }
 footer{
 	margin-top: 60px;
- 	height: 44vh;
+ 	min-height: 38vh;
  	background-color: #696565 /*#cfcbc2*/;
  	border-top: 1px solid #e8e8e7;
  	display: grid;
@@ -233,10 +233,11 @@ footer h3{
 	color: #fad787;
 	font-size: 30px;
 	padding-bottom: 10px;
+	padding-top: 20px;
 
 }
 #footerhead{
-	display: inline-flex;
+	display: flex;
 	justify-content: center;
 	justify-items: center;
 }
@@ -245,6 +246,10 @@ footer h1{
 	font-size: 5vh;
 	color: #fad787;
 	padding-top: 30px;
+}
+#sitemap{
+	display: flex;
+	justify-content: center;
 }
 #sitemap a:hover{
 	text-decoration: underline;
@@ -260,11 +265,13 @@ footer h1{
 #personal{
 	margin-top: 20px;
 }
+
 #sitemap a{
-		display: inline;
-		/*border-right: 2px solid #fff;*/
-		padding: 0px 3px;
-	}
+	display: inline;
+	/*border-right: 2px solid #fff;*/
+	padding: 0px 3px;
+
+}
 footer .contactdata{
 	margin-top: 0px;
 
@@ -1443,6 +1450,10 @@ iframe{
 	}
 	#contact button, .minibutton{
 		font-size: 13px;
+	}
+	footer h1{
+		font-size: 3vh;
+		margin-top: 2vh;
 	}
 } 
 
