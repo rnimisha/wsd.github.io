@@ -30,10 +30,9 @@ function viewStory(){
   let currentVerb = randomGenerator(randVerb);
 
   // //incase user has entered customer name
-  var enteredName = document.getElementById('cname')
-  if (enteredName.value !=='') {
-    replaceName=enteredName.value;
-    currentStory = currentStory.replace('Bob', replaceName);s
+  var enteredName = document.getElementById('cname').value;
+  if (enteredName!=='') {
+    currentStory = currentStory.replace('Bob', enteredName);
   }
 
 
