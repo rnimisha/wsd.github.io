@@ -22,7 +22,7 @@ function addmoreitem(){
 	}
 }
 
-//add more data on click
+//add more data on click by executing function
 if(add){
   add.addEventListener("click", addmoreitem, false);
 }

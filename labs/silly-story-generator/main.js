@@ -33,7 +33,7 @@ function viewStory(){
   var enteredName = document.getElementById('cname')
   if (enteredName.value !=='') {
     replaceName=enteredName.value;
-    currentStory = currentStory.replace('Bob', replaceName);
+    currentStory = currentStory.replace('Bob', replaceName);s
   }
 
 
