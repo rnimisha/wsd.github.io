@@ -8,17 +8,17 @@
 </head>
 <body>
   <div>
-      <label for="customname">Enter custom name:</label>
-      <input id="customname" type="text" placeholder=""/>
+      <label for="cname">Enter custom name:</label>
+      <input id="cname" type="text" placeholder="enter here"/>
     </div>
     <div>
-      <label for="us">US</label><input id="us" type="radio" name="ukus" value="us" checked>
-      <label for="uk">UK</label><input id="uk" type="radio" name="ukus" value="uk">
+      <label for="us">US</label><input id="us" type="radio" name="country" value="us" checked>
+      <label for="uk">UK</label><input id="uk" type="radio" name="country" value="uk">
     </div>
     <div>
-      <button class="randomize">Generate random story</button>
+      <button id="storyBtn">Generate random story</button>
     </div>
-    <p class="story"></p>
+    <p id="storyContent"></p>
     <script src="main.js"></script>
 </body>
 </html>

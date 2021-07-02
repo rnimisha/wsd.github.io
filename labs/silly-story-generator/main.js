@@ -1,45 +1,60 @@
-const customName = document.getElementById('customname');
-const randomize = document.querySelector('.randomize');
-const story = document.querySelector('.story');
 
-function randomValueFromArray(array){
-  const random = Math.floor(Math.random()*array.length);
-  return array[random];
+/*-------random content-------*/
+//random integer value will ge generated from 0 to array length
+function randomGenerator(array){
+  //floor to get value in integer
+  const ranValue = Math.floor(Math.random()*array.length);
+  return array[ranValue];// returns array with index 
 }
 
-let storyText = 'It was 94 fahrenheit outside, so :insertx: went for a walk. When they got to :inserty:, they stared in horror for a few moments, then :insertz:. Bob saw the whole thing, but was not surprised — :insertx: weighs 300 pounds, and it was a hot day.';
-let insertX = ['Willy the Goblin','Big Daddy','Father Christmas'];
-let insertY = ['the soup kitchen','Disneyland','the White House'];
-let insertZ = ['spontaneously combusted','melted into a puddle on the sidewalk','turned into a slug and crawled away'];
+//array that will be used 
+let storyDetail = 'It was 94 fahrenheit outside, so :newname: went for a walk. When they got to :newplace:, they stared in horror for a few moments, then :newverb:. Bob saw the whole thing, but was not surprised — :newname: weighs 300 pounds, and it was a hot day.';
+let randNames = ['Willy the Goblin','Big Daddy','Father Christmas'];
+let randPlaces = ['the soup kitchen','Disneyland','the White House'];
+let randVerb = ['spontaneously combusted','melted into a puddle on the sidewalk','turned into a slug and crawled away'];
 
 
-randomize.addEventListener('click', result);
+/*-------manipulating html with random content-------*/
+// vars for manupulating dom
 
-function result() {
-  let newStory = storyText;
-  let xItem = randomValueFromArray(insertX);
-  let yItem = randomValueFromArray(insertY);
-  let zItem = randomValueFromArray(insertZ);
+var btn = document.getElementById('storyBtn');
+var diffStory = document.getElementById('storyContent');
 
-  newStory = newStory.replace(':insertx:',xItem);
-  newStory = newStory.replace(':insertx:',xItem);
-  newStory = newStory.replace(':inserty:',yItem);
-  newStory = newStory.replace(':insertz:',zItem);
-  
 
-  if(customName.value !== '') {
-    let name = customName.value;
-    newStory = newStory.replace('Bob',name);
+//main function to manipulate story contents
+function viewStory(){
+  let currentStory = storyDetail;
+  //call funtionn to create random index
+  let currentName = randomGenerator(randNames);
+  let currentPlace = randomGenerator(randPlaces);
+  let currentVerb = randomGenerator(randVerb);
+
+  // //incase user has entered customer name
+  var enteredName = document.getElementById('cname')
+  if (enteredName.value !=='') {
+    replaceName=enteredName.value;
+    currentStory = currentStory.replace('Bob', replaceName);
   }
 
+
+  //replace code to change content
+  currentStory = currentStory.replace(':newname:',currentName);
+  currentStory = currentStory.replace(':newname:',currentName);
+  currentStory = currentStory.replace(':newplace:',currentPlace);
+  currentStory = currentStory.replace(':newverb:',currentVerb);
+  
+
+  //incase user chooses uk as country
   if(document.getElementById("uk").checked) {
     let weight = Math.round(300*0.0714286) + ' stone'
     let temperature =  Math.round((94-32) * 5 / 9) + ' centigrade';
-    newStory = newStory.replace('94 fahrenheit',temperature);
-    newStory = newStory.replace('300 pounds',weight);
-
+    currentStory = currentStory.replace('94 fahrenheit',temperature);
+    currenttory = currentStory.replace('300 pounds',weight);
   }
 
-  story.textContent = newStory;
-  story.style.display = 'block';
+  diffStory.innerHTML=currentStory;
+  diffStory.style.display = 'block';
 }
+
+//viewstory() will be executed when btn is clicked
+btn.addEventListener('click', viewStory);
