@@ -3,23 +3,23 @@
 // open button click on new tab
 function NewTab() 
 {
-  window.open("contact.html", "_blank");
+  window.open("page-5.html", "_blank");
 }
 function NewTabProduct() 
 {
-  window.open("about.html#products", "_blank");
+  window.open("page-2.html#products", "_blank");
 }
 function NewTabAdopt() 
 {
-  window.open("health.html#adopts", "_blank");
+  window.open("page-3.html#adopts", "_blank");
 }
 function NewTabTrain() 
 {
-  window.open("about.html#trainings", "_blank");
+  window.open("page-2.html#trainings", "_blank");
 }
 function NewTabHealth() 
 {
-  window.open("health.html", "_blank");
+  window.open("page-3.html", "_blank");
 }
  
 //event listeners
@@ -386,7 +386,7 @@ function addmorepet(){
 
     //deleting button
     let delbtn=document.createElement("button");
-    delbtn.textContent="Remove";
+    delbtn.textContent="X";
 
     //new item with delete button
     petname.appendChild(list);
