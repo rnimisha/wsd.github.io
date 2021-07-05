@@ -1,39 +1,48 @@
+
+/*Google Fonts*/
 @import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@500&family=Luckiest+Guy&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+/*import bootsrap css for carousel*/
 @import "bootstrap.css"; 
 
+/*for whole */
 *{
 	margin: 0px;
 	padding: 0px;
 	box-sizing: border-box;
 }
 
+/*main body of html file decoration*/
 body{
 	background-color:#f8f4e9;
 	font-family: 'Baloo 2', cursive;
 	letter-spacing: -0.2px;
 }
+
+/*make link text italic*/
 a{
 	font-style: italic;
 }
-a:link{color: blue;}
+/*change color of non vistited and visited links*/
+a:link{color: blue;} 
 a:visited{color: #aa32f0;}
 
 
-
+/*display main container as flex*/
 #container{
 	display: flex;
 	flex-direction: column;
 }
+
+/*for fixed header and navigation*/
 #fix{
 	width: 100%;
 	position: fixed;
 	z-index: 9999;
 	right: 0;
 }
-nav{
- 	min-height: 6vh;
-}
+
+/*sytling header*/
 header{
  	min-height: 14vh;
  	background-color: #90b3c9;
@@ -55,9 +64,14 @@ header h1{
 	text-align: center;
 }
 
+/*styling navigation*/
+nav{
+ 	min-height: 6vh;
+}
 #navigation{
 	background-color:#c7d9e5;
 }
+/*styling page links in nav*/
 #navigation a{
 	display: flex;
     align-items: center;
@@ -73,11 +87,13 @@ header h1{
     padding:0px 4px 0px 4px;
 
 }
+/*adding hover effects*/
 #navigation a:hover{
     background-color:#e6b8b8;
     cursor: pointer;
 
 }
+/* making ul of navigation as flex*/
 #navigation ul{
     display: flex;
     list-style-type: none;
@@ -88,55 +104,64 @@ header h1{
     align-items: center;
 
 }
+/*setting position relative to reference during dropmenu*/
 #navigation ul li{
 	position: relative;
 }
-
+/*styling dropmenu*/
 #navigation ul li ul.dropmenu {
-        min-width: 100%; 
-        background: #c7d9e5;
-        display: none;
-        position: absolute;
-        z-index: 999;
-        left: 0;
+    min-width: 100%; 
+    background: #c7d9e5;
+    display: none;
+    position: absolute;
+    z-index: 999;
+    left: 0;
 }
+/*making dropmenu visible when hover*/
 #navigation ul li:hover ul.dropmenu {
         display: block;
 
 }
+/*styling list of dropmenu*/
 #navigation ul li ul.dropmenu li {
-        display: block;
-        min-height: 6vh;
-        background-color:#c7d9e5;
-        min-width: 25vh;
-		margin-left: -30px;
+    display: block;
+    min-height: 6vh;
+    background-color:#c7d9e5;
+    min-width: 25vh;
+	margin-left: -30px;
 }
 #navigation ul li ul.dropmenu li a{
-        text-align: center;
-        background-color:#c7d9e5;
+    text-align: center;
+    background-color:#c7d9e5;
 
         
 }
 #navigation ul li ul.dropmenu li a:hover{
-        background-color:#e6b8b8;  
-        cursor: pointer;     
+    background-color:#e6b8b8;  
+    cursor: pointer;     
 }
 .down{
 	margin-top: 4px;
 	font-size: 15px;
 }
+
+/*adding down symbol through css*/
 .down:after{
   content: '\25BC';
 }
+
+/*set different color for active page in nav*/
 #active{
 	background-color: #90b3c9;
 	border-radius: 0px 0px 4px 4px;
 }
+/*to make size of all nav element same*/
 .grow{
 	flex-grow: 1;
 }
+
+/*Main container used in page-1.html*/
 #main{
-	
 	width: 80%;
 	margin: auto auto;
 	display: grid;
@@ -147,8 +172,8 @@ header h1{
     justify-content: space-between;
     margin-top: 23vh;
     z-index: 9998;
-    
 }
+/*grid part for slider*/
 #myfigure{
 	grid-column: 1/3;
 	grid-row: 1/2;
@@ -158,15 +183,22 @@ header h1{
 	margin-top: 3vh;
 	height: 520px;
 }
+
 #myfigure h2{
 	color: #fff;
 	font-size: 70px;
+	line-height: 1;
+	margin-bottom: -3px;
+}
+#myfigure p{
+	font-size: 20px;
 }
 .sliderimg{
 	width: 100%;
 	height: 500px;
 	opacity: 0.3;
 }
+/*decoration for class button, buttons in slider and showbutton used in displaying more */
 .button, #showbutton, .sliderbutton{
   border: none;
   border-radius: 10px;
@@ -180,41 +212,34 @@ header h1{
   margin-top: 30px;
   width: 90%;
   height: 10vh;
-  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.35);
 }
 
+/* groupping all button id and class hover effects*/
 .button:hover, #showbutton:hover, .sliderbutton:hover, .minibutton:hover, .choosebtn:hover, footer button:hover, #dynamicList ul li button:hover{
-	box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+	box-shadow: 32px 42px 85px rgba(0, 0, 0, 0.51);
 	color: #fff;
 	cursor: pointer;
 }
-.gallerybtn{
-	border: none;
-  	border-radius: 10px;
-  	background-color: #f8f4e9;
-}
-.gallerybtn:hover{
-	text-decoration: underline;
 
-}
-
-#gallerypg1{
-	background-color: #90b3c9;
-	box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-}
+/*additional or change styling for button in slider*/
 .sliderbutton {
-  margin-bottom: 30px;
-  width: 30%;
+  width: 40%;
   height: 8vh;
+  background-color: #e6b8b8;
 }
+/*grid position for aside in #main*/
 aside{
 	grid-column: 1/2;
 	grid-row: 2/3;
 }
+/*grid position for article in #main*/
 article{
 	grid-column: 2/3;
 	grid-row: 2/3;
 }
+
+/*footer styling*/
 footer{
 	margin-top: 60px;
  	min-height: 38vh;
@@ -236,10 +261,12 @@ footer h3{
 	padding-top: 20px;
 
 }
+/*for company logo and name in footer*/
 #footerhead{
 	display: flex;
 	justify-content: center;
 	justify-items: center;
+	flex-wrap: wrap;
 }
 footer h1{
 	font-family: 'Luckiest Guy', cursive;
@@ -247,13 +274,16 @@ footer h1{
 	color: #fad787;
 	padding-top: 30px;
 }
+/*for links to pages in footer*/
 #sitemap{
 	display: flex;
+	flex-wrap: wrap;
 	justify-content: center;
 }
 #sitemap a:hover{
 	text-decoration: underline;
 }
+/*same text syle for footer elements*/
 #sitemap a, footer .contactdata a,#copyright, #personal{
 	text-decoration: none;
 	display: block;
@@ -262,6 +292,7 @@ footer h1{
 	font-style: normal;
 	font-size: 17px;
 }
+/*for my name and id*/
 #personal{
 	margin-top: 20px;
 }
@@ -292,7 +323,7 @@ footer .contactdata .logoimg{
 	padding: 5px;
 	margin-bottom: -9px;
 }
-
+/*display style for footer social media logo imgs*/
 #blocklogo {
 	display: flex;
 	flex-wrap: wrap;
@@ -316,9 +347,8 @@ footer button{
   	background-color: #696565;
   	color: #fff;
   	cursor: pointer;
-
 }
-
+/*last element in footer*/
 #copyright{
 	grid-column: 1/4;
 	width: 100%;
@@ -335,6 +365,28 @@ h2{
 	color: #7d3933;
 	font-size: 36px;
 }
+/*left part in page-1 in aside tag*/
+#gridmanage{
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	justify-content: space-between;
+	grid-gap: 10px;
+}
+/* first row of gridmanage */
+#topaside{
+	grid-column: 1/3;
+	grid-row: 1/2;
+}
+/*second row of gridmanage*/
+#bottomleftaside{
+	grid-column: 1/2;
+	grid-row: 2/3;
+}
+#bottomrightaside{
+	grid-column: 2/3;
+	grid-row: 2/3;
+}
+/*styling h2 for #topaside onlt*/
 #topaside > h2{
 	font-size: 43px;
 	font-weight: bold;
@@ -343,35 +395,18 @@ h2{
 	text-align: center;
 	margin-bottom: 10px;
 }
+/*highligthinh words in sentence*/
 #extracolor{
 	color: #631d1d;
 	font-weight: bold;
 }
+/*for all paragraph in all html*/
 p{
 	/*text-align: justify;*/
 	margin: 0px 10px 0px 10px;
 }
 
-#gridmanage{
-	display: grid;
-	grid-template-columns: 1fr 1fr;
-	justify-content: space-between;
-	grid-gap: 10px;
-}
-#topaside{
-	grid-column: 1/3;
-	grid-row: 1/2;
-}
-#bottomleftaside{
-	grid-column: 1/2;
-	grid-row: 2/3;
-
-
-}
-#bottomrightaside{
-	grid-column: 2/3;
-	grid-row: 2/3;
-}
+/*styling second row of gridmanage*/
 #bottomleftaside ,#bottomrightaside{
 	border: 10px solid #90b3c9;
 	border-radius: 10px;
@@ -382,18 +417,22 @@ p{
 	margin-top: 10px;
 	position: relative;
 }
+/*for all h3*/
 h3{
 	color: #631d1d;
 	text-align: center;
 	font-size: 25px;
 }
+/*for h3 in topaside only*/
 #topaside > h3{
 	font-size: 32px;
 }
+/*change opacity of img of inside when hover*/
 #bottomleftaside:hover img, #bottomrightaside:hover img{
 	opacity:0.7;
 	cursor: pointer;
 }
+/*opacity for youtube icon above img om bottomleftside and bottomleftside*/
 .playpng{
 	position: absolute;
   	top: 0;
@@ -404,16 +443,24 @@ h3{
   	width: 100%;
   	padding: 20%;
   	opacity: 0;
-  	transition: .5s ease;
- 	/*background-color: #fff;*/
-
+  	/*transition property for zoom animation here*/
+  	transition: .5s ease; 
 }
+/*.playpng will be see when hovered with zoom animation*/
 #bottomleftaside:hover .playpng, #bottomrightaside:hover .playpng{
 	opacity: 1;
 	cursor: pointer;
 	animation-name: zoom;
   	animation-duration: 0.6s;
 }
+
+/*zoom animation properties*/
+@keyframes zoom {
+  from {transform:scale(0)} 
+  to {transform:scale(1)}
+}
+
+/*for right side part of page-1*/
 article > h2 {
 	margin-top: 15px;
 	margin-bottom: 20px;
@@ -421,6 +468,7 @@ article > h2 {
 	font-size: 32px;
 	text-align: center;
 }
+/*more css styling for article*/
 article{
 	width:100%; 
 	min-height:500px;  
@@ -430,37 +478,47 @@ article{
 	margin-top: 20px;
 	padding: 10px;
 }
+/*for video in article*/
 .trendimage{
-	width: 96%;
-	height: 200px;
+	width: 83%;
+	height: 250px;
 	border-radius:10px;
-	margin: 20px 10px 20px 10px;
+/*	to align center*/
+	display: block;
+	margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 article > h3
 {
 	font-size: 20px;
 }
+
+/*making a circle with radius*/
 .circle{
 	border-radius: 50%;
 	width: 96%;
 	height: 250px;
-	box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+	box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.35);
 }
 .circle:hover{
 	cursor: pointer;
-	box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+	box-shadow:  18px 36px 225px 0px rgba(0, 0, 0, 0.75);
 }
 
 figcaption{
 	text-align: center;
 	font-size: 20px;
 }
+/*putting title in one whole row of grid*/
 #servicestitle{
 	grid-column: 1/3;
 	grid-row: 3/4;
 	margin-bottom: -20px;
 
 }
+/*last grid row of #main*/
 #services{
 	grid-column: 1/3;
 	grid-row: 4/5;
@@ -470,13 +528,14 @@ figcaption{
 	justify-content: space-between;
 	width: 100%;
 }
+/*setting width into 4 parts*/
 #service1, #service2, #service3, #service4{
-	
 	width: 23%;
 	margin: 10px;
 }
 
 
+/*using different id for main of remaining pages to manipulate extra unique styling*/
 #aboutmain, #healthmain, #gallerymain1, #gallerymain2{
 	width: 80%;
 	margin: auto auto;
@@ -489,6 +548,8 @@ figcaption{
     margin-top: 23vh;
     z-index: 9998;
 }
+
+/*starting more styling for page-2*/
 #aboutus{
 	grid-column: 1/5;
 	grid-row: 1/2;
@@ -502,9 +563,11 @@ figcaption{
 	grid-template-columns: 1fr 1fr;
 
 }
+/*for maim imaghe in page-2*/
 #aboutimg{
 	grid-column: 1/2;
 }
+/*for main about us paragraph*/
 #aboutpar{
 	grid-column: 2/3;
 	margin-left: 10px;
@@ -512,7 +575,9 @@ figcaption{
 }
 #aboutpar p{
 	margin-left: 0px;
+	margin-bottom: 5px;
 }
+/*for button in each services in page-2*/
 .minibutton, #dynamicList ul li button{
   border: none;
   border-radius: 10px;
@@ -527,6 +592,7 @@ figcaption{
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
+/*main title of services*/
 #title1{
 	grid-column: 1/5;
 	grid-row: 2/3;
@@ -534,6 +600,7 @@ figcaption{
 	align-items: center;
 	
 }
+/*for ones in same column*/
 #supply1, #groom1, #train1{
 	grid-column: 1/2;
 }
@@ -546,18 +613,23 @@ figcaption{
 #supply4, #groom4, #train4{
 	grid-column: 4/5;
 }
+/*same decoration for all*/
 #supply1, #supply2, #supply3, #supply4, #groom1, #groom2, #groom3, #groom4, #train1, #train2, #train3, #train4{
 	grid-row: 3/4;
 	box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 	width: 98%;
-	padding: 20px 20px 20px 10px;
+	padding: 20px 10px 20px 10px;
 	border-radius:10px;
 }
+/*img inside about grid content*/
 .productimage{
-	width: 96%;
-	height: 200px;
+	width: 90%;
 	border-radius:10px;
-	margin: 10px 10px 10px 10px;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 10px;
+	margin-top: 10px;
 }
 
 #title2{
@@ -566,6 +638,7 @@ figcaption{
 	margin-bottom: -20px;
 	
 }
+/*same row but diff column*/
 #groom1, #groom2, #groom3, #groom4{
 	grid-row: 5/6;
 }
@@ -580,10 +653,11 @@ figcaption{
 }
 
 
-
+/*different justify-items for main of page-3*/
 #healthmain{
 	justify-items: stretch;
 }
+/*first row of healthmain container*/
 #healthtop{
 	grid-column: 1/5;
 	grid-row: 1/2;
@@ -594,6 +668,7 @@ figcaption{
 	align-items: flex-end;
 	min-height: 560px;
 }
+/*divide healthtop to two columns*/
 #healthflex1
 {
 	width: 65%;
@@ -602,6 +677,7 @@ figcaption{
 {
 	width: 35%;
 }
+/*styling h1 for healthflex2 only*/
 #healthflex2 h1{
 	font-size: 50px; 
 	margin: 0px; 
@@ -613,10 +689,11 @@ figcaption{
 	margin-top: 10px;
 	margin-left: 10px;
 }
+/*img setting for main page-3 img*/
 .vetimg{
 	margin-top: 20px;
-	width: 100%;
-	height: 63vh;
+	width: 90%;
+	max-height: 560px;
 }
 #healthmain h1{
 	margin-left: 10px;
@@ -624,13 +701,12 @@ figcaption{
 	font-size: 40px;
 	font-weight: bold;
 }
-#myfigure h2{
-	line-height: 1;
-	margin-bottom: -3px;
+/*for our speciality h2*/
+#newh2{
+	margin-top: 20px;
+	margin-bottom: 10px;
 }
-#myfigure p{
-	font-size: 20px;
-}
+/*all in same row*/
 #speciality1, #speciality2, #speciality3, #speciality4{
 	grid-row: 3/4;
 	width: 98%;
@@ -640,6 +716,7 @@ figcaption{
 	background-color: #90b3c9;
 	position: relative;
 }
+/*but different column*/
 #speciality1{
 	grid-column: 1/2;
 }
@@ -652,14 +729,14 @@ figcaption{
 #speciality4{
 	grid-column: 4/5;
 }
+/*image on center*/
 .specialityimg{
 	width: 98%;
-	align-items: center;
-	height: 120px;
 	border-radius:10px;
 	margin: 10px 20px 10px 10px;
-
 }
+
+/*display on hover with zoom effect*/
 .caption{
 	position: absolute;
   	top: 0;
@@ -671,15 +748,12 @@ figcaption{
   	opacity: 0;
   	transition: .5s ease;
  	background-color: #fff;
-
-
 }
 .caption h3 {
 	text-align: center;
 	padding-top: 50px;
 	font-size: 40px;
 	color: #000;
-
 }
 #speciality1:hover .caption,#speciality2:hover .caption,#speciality3:hover .caption,#speciality4:hover .caption{
   opacity: 0.7;
@@ -688,7 +762,7 @@ figcaption{
 	animation-duration: 1s;
     animation-name: zoom;
 }
-
+/*grid part for vets*/
 #staff{
 	grid-row: 5/6;
 	grid-column: 1/5;
@@ -701,18 +775,12 @@ figcaption{
 	display: grid;
 	grid-template-columns: 1fr 1fr;
 	justify-items: center;
-
-}
-
-#newh2{
-	margin-top: 20px;
-	margin-bottom: 10px;
 }
 #stafftitle{
 	grid-row: 1/2;
 	grid-column: 1/3;
-
 }
+/*for two staffs in same row diff column*/
 #staff1{
 	grid-column: 1/2;
 }
@@ -747,6 +815,8 @@ figcaption{
 .staffinfo p{
 	margin: 0px;
 }
+
+/*for last part in page-3*/
 #savepet{
 	grid-row: 6/7;
 	grid-column: 1/5;
@@ -755,17 +825,16 @@ figcaption{
 	flex-direction: row;
 	justify-content: space-between;
 }
-#savepet h2{
-	text-align: center;
-}
-#savepet p{
-	margin: 0px;
-}
+
+/*main heading of savepet*/
 #saveheading{
 	width: 100%;
 	margin-bottom: -20px;
 }
-
+#savepet h2{
+	text-align: center;
+}
+/*for each pet box*/
 .adoptpet{
 	width: 45%;
 	border: 10px solid #e6b8b8;
@@ -776,14 +845,15 @@ figcaption{
 	padding-bottom: 20px;
 
 }
+/*image that will change with js and with rotate effect*/
 .adoptimg{
 	width: 80%;
-	height: 200px;
 	border-radius:10px;
 	margin:10%;
 	animation-name: rotatein;
     animation-duration:0.3s;
 }
+/*rotate animation*/
 @keyframes rotatein {
     from {
         transform: rotate(0deg);
@@ -800,6 +870,7 @@ figcaption{
         transform: rotate(0deg);
     }
 }
+/*change rotate direction on hover and image will be changed with js*/
 .adoptimg:hover{
 	animation-name: rotateout;
     animation-duration:0.3s;
@@ -811,6 +882,7 @@ figcaption{
 .adoptpet p{
 	text-align: center;
 }
+/*more part to be shown if user clicks button*/
 #showmore{
 	width: 100%;
 	display: flex;
@@ -822,7 +894,7 @@ figcaption{
     -webkit-animation-duration: 1s;
     -webkit-animation-name: slideup;
 }
-
+/*more will be shown with this animation*/
 @keyframes slideup{
 	from{
         margin-top: 100%;
@@ -831,45 +903,44 @@ figcaption{
         margin-top: 0%;
     }
 }
-#gallerymain1, #gallerymain2
-{
-	animation-name: zoom;
-	animation-duration: 1s;
-}
-
+/*to put button on correct place*/
 #viewmore{
 	grid-column: 1/5;
 	grid-row: 8/9;
 	margin-top: -25px;
 	width: 100%;
 }
-
+/*button to display more/display less*/
 #showbutton {
   margin-bottom: 30px;
   width: 40%;
   height: 8vh;
   margin-left: 30%;
 }
-.sliderbutton{
-	width: 40%;
-	margin-left: 0px;
-	height: 8vh;
-	background-color: #e6b8b8;
-}
 
-#gallerymain1, #gallerymain2{
+
+/*additional styling for page-4 main container*/
+/*two containers as 2 pages*/
+#gallerymain1, #gallerymain2
+{
+	animation-name: zoom;
+	animation-duration: 1s;
 	margin-top: 25vh;
 	justify-items: stretch;
 	align-items: stretch;
 }
+
+/*only one is dislayed*/
 #gallerymain2{
 	display: none;
 }
+/*biggest image in gallerymain1*/
 #first{
 	grid-row: 1/3;
 	grid-column: 1/4;
 	height: 100%;
 }
+/*beside biggest img*/
 #second{
 	grid-row: 1/2;
 	grid-column: 4/5;
@@ -881,6 +952,7 @@ figcaption{
 	height: 100%;
 }
 
+/*when hover on each images add box shadow with reduced radius and size*/
 #gallerymain1 .myimages:hover, #gallerymain2 .myimages:hover{
 	opacity: 0.8;
 	width: 94%;
@@ -890,11 +962,11 @@ figcaption{
 	border-radius: 5px;
 	cursor: pointer;
 }
+/*property for image that will be displayed full screen when clicked */
 .zoomimage{
 	display: none;
 	position: fixed;
 	z-index: 1;
-	/*padding:5%;*/
 	left: 0;
 	top: 0;
 	width: 100%;
@@ -903,7 +975,7 @@ figcaption{
 	background-color: #000;
 
 }
-
+/*container to make img on center*/
 .imagesize {
     display: grid;
     height: 100%;
@@ -913,16 +985,11 @@ figcaption{
     max-height: 100vh;
     margin: auto;
     animation-name: zoom;
-  	animation-duration: 1s;
+  	animation-duration: 0.7s;
   	padding: 3%;
 }
 
-@keyframes zoom {
-  from {transform:scale(0)} 
-  to {transform:scale(1)}
-}
-
-
+/*will close zoomed image when clicked*/
 .close{
   	position: absolute;
   	top: 25px;
@@ -936,9 +1003,11 @@ figcaption{
 .close:hover{
   text-decoration: none;
   cursor: pointer;
+  /*animation*/
   transform: rotate(360deg);
 
 }
+/*container for page button*/
 #gallerybtn{
 	display: flex;
 	justify-content: center;
@@ -946,11 +1015,26 @@ figcaption{
 	width: 100%;
 	margin-top: 10px;
 }
+/*propery of button itself*/
 .gallerybtn{
 	margin: 10px;
 	width: 30px;
 	height: 30px;
+	border: none;
+  	border-radius: 10px;
+  	background-color: #f8f4e9;
 }
+.gallerybtn:hover{
+	text-decoration: underline;
+}
+
+/*active button decoration*/
+#gallerypg1{
+	background-color: #90b3c9;
+	box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+/*container for form+other contact*/
 #contact{
 	margin-top: 30px;
 	grid-row: 1/2;
@@ -967,7 +1051,7 @@ figcaption{
 	/*padding: 20px;*/
 }
 
-
+/*image beside fomr*/
 #contact .myimages{
 	max-width: 100%;
     max-height: 450px;
@@ -978,14 +1062,17 @@ figcaption{
 	text-align: center;
 	margin-top: 5px;
 }
+/*two different forms*/
 #register, #sendmessage{
 	width: 100%;
 }
+/*one is hidden*/
 #register{
 	display: none;
 }
-
+/*container for form*/
 #formid{
+	width: 100%;
 	background-color: #e6b8b8;
 	border-radius: 20px;
 	box-shadow: #9e957b 0px 1px 2px 0px, #9e957b 0px 2px 6px 2px,#9e957b 0px 1px 2px 0px, #9e957b 0px 2px 6px 2px;
@@ -995,6 +1082,7 @@ form{
 	width: 100%;
 	padding: 20px;
 }
+/*to display 2 in one row in form*/
 .formgrid{
 	display: grid;
 	grid-template-columns: 1fr 1fr;
@@ -1002,6 +1090,7 @@ form{
 
 
 }
+/*div class for each input*/
 .data{
 	width: 100%;
 }
@@ -1009,6 +1098,7 @@ label{
 	margin-left: 8px;
 	display: block;
 }
+/*each input type*/
 .inputbox{
 	border: 1px solid #90b3c9;
   	width: 100%;
@@ -1020,6 +1110,7 @@ label{
   	margin-top: 3px;
   	
  }
+ /*hover effect for different input types*/
 input[type=text]:hover,input[type=email]:hover, textarea:hover{
 	cursor: text;
 }
@@ -1027,6 +1118,7 @@ input[type=text]:hover,input[type=email]:hover, textarea:hover{
 #radio{
 	display: inline-block;
 }
+/*to display radio options in one line*/
 .lineblock label{
 	display: inline-block;
 	margin-bottom: 20px;
@@ -1034,16 +1126,16 @@ input[type=text]:hover,input[type=email]:hover, textarea:hover{
   	width: 30%;
   	height: 20px;
 }
+/*when js focus on error input*/
 .inputbox:focus, input[type=radio]:focus, input[type=checkbox]:focus, textarea:focus{
 	outline: none;
- 	box-shadow: #90b3c9 7px 7px 29px 7px;
+ 	box-shadow: #FF0000 7px 7px 29px;
 }
-.inputbox:focus .errorred{
-	box-shadow: #eb3f3f 7px 7px 29px 7px;
-}
+/*pointer change*/
 input[type=radio]:hover, input[type=checkbox]:hover, select{
 	cursor: pointer;
 }
+/*message box*/
 textarea{
 	min-height: 10vh;
 	width: 100%;
@@ -1053,9 +1145,11 @@ textarea{
   	border-radius: 20px;
   	padding: 10px;
 }
+/*submit reset btns*/
 #contact .minibutton{
 	margin: 15px 0px;
 }
+/*form choose btns*/
 .choosebtn{
 	border: none;
   	border-radius: 10px;
@@ -1070,30 +1164,34 @@ textarea{
   	box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 
 }
-
+/*container for form option btns*/
 #logsign{
 	padding: 0px 10px 30px 20px;
 }
-
+/*right side of contact*/
 #sideflex{
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
 }
+/*for more contact details*/
 #contactinfo{
 	margin-left: 30px;
 }
+/*logo in contact details*/
 .logoimg{
 	width: 30px;
 	height: 30px;
 	margin-right: 30px;
 	margin-bottom: -5px;
 }
+/*more properties for contact form only since same class used in footer*/
 #sideflex .logoimg{
 	animation-name: rotatein;
     animation-duration:0.3s;
 }
+/*when hovered on logo+text*/
 #sideflex .logoimg:hover, #sideflex .contactdata a:hover .logoimg{
 	animation-name: rotateout;
     animation-duration:0.3s;
@@ -1107,14 +1205,17 @@ textarea{
 	color: #000;
 	font-style: normal;
 }
+/*error in input will be displayed*/
 #loginError{
 	/*color:#ff0000;*/
 	padding: 20px 0px 0px 20px;
 	text-align: center;
 }
-#itemform{
+/*#itemform{
 	display: none;
-}
+}*/
+
+/*for map container*/
 #maps{
 	grid-column: 1/5;
 	min-height: 50vh;
@@ -1281,6 +1382,9 @@ iframe{
     {
 	  width: 100%;
     }
+    .caption h3 {
+		font-size: 30px;
+	}
     #staff1{
 		grid-column: 1/3;
 	}
@@ -1362,6 +1466,9 @@ iframe{
 	#dynamicList .minibutton{
 		width: 95%;
 		margin: 2%;
+	}
+	.sliderbutton{
+		font-size: 20px;
 	}
 }
 
@@ -1530,5 +1637,14 @@ iframe{
 		font-size: 3vh;
 		margin-top: 2vh;
 	}
+	header h1{
+		font-size: 4vh;
+		letter-spacing: 2px;
+	}
+	.sliderbutton{
+		height: 6vh;
+		font-size: 14px;
+	}
+
 } 
 

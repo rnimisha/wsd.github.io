@@ -62,7 +62,7 @@ function changeBack(nn){
     var source="images/adopt"+nn+".jpeg";
     document.getElementById("changeimg"+numb).src=source;
 }
-//eventlisteners
+//eventlistener for changing image on hover
 var image1=document.getElementById("changeimg1");
 if(image1){
     image1.addEventListener("mouseover", () => {changeImage("1");}, false);
@@ -107,11 +107,13 @@ function moreView() {
     document.getElementById("showbutton").innerHTML = "Show More";
   }
 }
+//event to view more
 var showbtn = document.getElementById("showbutton");
 if(showbtn){
   showbtn.addEventListener("click", moreView, false);
 }
 
+//funtion tochange pages in page-4
 function changeGallery2() {
   var page = document.getElementById("gallerymain1");
   var page2 = document.getElementById("gallerymain2");
@@ -138,6 +140,8 @@ function changeGallery1() {
   }
   document.getElementById("divtop").scrollIntoView();
 }
+
+//event that will change page
 var gallerybtn1 = document.getElementById("gallerypg1");
 if(gallerybtn1){
     gallerybtn1.addEventListener("click", changeGallery1, false);
@@ -172,6 +176,7 @@ function changeform(oldid, newid){
     oldform.style.display="none";
     var newform=document.getElementById(newid);
     newform.style.display="flex";
+    //to go to top
     window.scrollTo(0, 0);
 }
 
@@ -188,18 +193,21 @@ function validateLogin(){
         document.getElementById("loginError").innerHTML="Username and Password is required!!!";
         document.getElementById("username").focus();
         document.getElementById("loginError").style.color="#ff0000";
+        document.getElementById("loginError").scrollIntoView(true);
         return false;
     } 
     else if(uname == "" ) {
         document.getElementById("loginError").innerHTML="Username is required!!";
         document.getElementById("username").focus();
         document.getElementById("loginError").style.color="#ff0000";
+        document.getElementById("loginError").scrollIntoView(true);
         return false;
     }
     else if(pass == "") {
         document.getElementById("loginError").innerHTML="Password is required!!";
         document.getElementById("yourpass").focus();
         document.getElementById("loginError").style.color="#ff0000";
+        document.getElementById("loginError").scrollIntoView(true);
         return false;
     }
     else if(select == "") {
@@ -242,7 +250,7 @@ function validateLogin(){
     
 }
 
-
+//validate form for registerring
 function validateRegister()
 {
     var firstname=document.getElementById("fname").value;
@@ -262,12 +270,14 @@ function validateRegister()
         document.getElementById("loginError").innerHTML="Firstname is required!!";
         document.getElementById("fname").focus();
         document.getElementById("loginError").style.color="#ff0000";
+        document.getElementById("loginError").scrollIntoView(true);
         return false;
     }
     else if(lastname == "" ) {
         document.getElementById("loginError").innerHTML="Lastname is required!!";
         document.getElementById("lname").focus();
         document.getElementById("loginError").style.color="#ff0000";
+        document.getElementById("loginError").scrollIntoView(true);
         return false;
     }
     else if(username == "" ) {
@@ -335,6 +345,7 @@ function validateRegister()
     else if(radio1==false && radio2==false){
         document.getElementById("loginError").innerHTML="Please Choose one Option.";
         document.getElementById("loginError").style.color="#ff0000";
+        document.getElementById("loginError").scrollIntoView(true);
         document.getElementById("ans1").focus();
         return false;
     }
@@ -343,6 +354,7 @@ function validateRegister()
         document.getElementById("loginError").innerHTML="Cant Register without Agreeing to our Terms.";
         document.getElementById("loginError").style.color="#ff0000";
         document.getElementById("agreement").focus();
+        document.getElementById("loginError").scrollIntoView(true);
         return false;
     }
     else{
@@ -370,7 +382,7 @@ function show(){
     }
 }
 
-
+//event listener
 if(otherpet){
     otherpet.addEventListener("click", show, false);
 }

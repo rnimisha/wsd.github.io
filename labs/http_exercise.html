@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Lab exercise HTTP</title>
+    <meta charset="utf-8"/>
+    <meta name="author" content="Nimisha"/>
+    <meta name="description" content="HTTP lab exercises"/>
+    <link href="http_css.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+	<header>
+		<h1>HTTP Exercises</h1>
+	</header>
+	<div id="main">
+		<h1>1. What is the Hypertext Transfer Protocol (HTTP)?</h1>
+		<p>ANS: Hyper Text Transfer Protocol is client-server protocol for transmitting hypermedia documents. It is application layer protocol.It is used to tranfer data over the web.</p>
+		<br/>
+		<br/>
+		<h1>2. Why is HTTP called a stateless protocol?</h1>
+		<p>ANS: HTTP server will not remember whether a client has visited it before.Connection between browser and server is lost after transaction ends.</p>
+		<br/>
+		<br/>
+		<h1>3. Describe the three phases of establishing a session using client-server protocols such as HTTP</h1>
+		<p>
+			First Phase: The client establishes a TCP connection<br/>
+			Second Phase: The client sends its request, and waits for the answer.<br/>
+			Third Phase: The server processes the request, sending back its answer, providing a status code and appropriate data.
+		</p>
+		<br/>
+		<br/>
+		<h1>4. Describe the parameters on a get and post request.</h1>
+		<p>
+			ANS: Get and post are used to transfer data from client to server. Get will show request parameter in url but post wont. Post is more secure.
+		</p>
+		<br/>
+		<br/>
+		<h1>5. What are the HTTP response status code and What do the HTTP status codes, 200, and 404 indicate?</h1>
+		<p>
+			HTTP response status code is three digit code that shows if request to web server was completed successfully. 
+			<br/>
+			HTTP STATUS CODE 200 - OK: Represents that request has succeeded. <br/>
+			HTTP Status Code 404 - Not Found: Represents that requested page is not found.
+		</p>
+		<br/>
+		<br/>
+		<h1>6. What are HTTP cookies? Give an example.</h1>
+		<p>
+			ANS: Cookies is textual information about website. It will saave some info in local device to be able to recoginze in next visit and display result according to preferences. Cookies remembers stateful information for the stateless HTTP protocol.Eg: Set-Cookie: mykey=myvalue; SameSite=Strict
+		</p>
+		<br/>
+		<br/>
+		<h1>7. Why are cookies a security issue?</h1>
+		<p>
+			ANS: Stored value that were provided to cookies are visible and can be manipulated by end user. Cookies sent over http is not encryped and causes risk unlike https.Not encrypted cookie is able to transmit information.
+		</p>
+		<br/>
+		<br/>
+		<h1>8. Describe session hijacking and XSS</h1>
+		<p>
+			Session hijacking is an attack where a user session is taken over by an attacker. It happens if attacker knows session key.It can also be leaked through cookies.
+			<br/>
+			XXS stands for Cross-Site Scripting where malicious script are injected into web pages.This will make attacker know victim's session key.Innjected scripts can even rewrite the content of the HTML page
+		</p>
+		<br/>
+		<br/>
+		<h1>9. Describe Cross-site request forgery(CSRF)</h1>
+		<p>Cross-site request forgery(CSRF) is a type of attack that happens when a malicious website delegates its request to another website or web application where the user is authenticated. The attacker can access whole or partial functionality of the website via the victim's authenticated browser.</p>
+		<br/>
+		<br/>
+		<h1>10. What are Cross-site HTTP requests (CORS) and what requests use CORS?</h1>
+		<p>
+			Cross-Origin Resource Sharing (CORS) is a protocol that enables scripts running on a browser client to interact with resources from a different origin.The CORS protocol consists of a set of headers that indicates whether a response can be shared cross-origin."Cross-domain" requests use CORS.
+		</p>
+	</div>
+</body>
+</html>

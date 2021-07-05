@@ -1,0 +1,30 @@
+/*for overall */
+*{
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+}
+
+/*header decoration*/
+header{
+	height: 15vh;
+	background-color: #90b3c9;
+	display: flex;
+    align-items: center;
+    justify-content: center;
+ }
+header h1{
+	font-size: 8vh;
+}
+ body{
+ 	background-color:#f8f4e9;
+ }
+#main{
+	margin: 30px;
+}
+h1{
+	margin-bottom: 5px;
+}
+p{
+	margin-left: 30px;
+}
