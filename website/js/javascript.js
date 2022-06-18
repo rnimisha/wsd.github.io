@@ -240,7 +240,6 @@ function validateLogin(){
         document.getElementById("loginError").innerHTML="Message is required!!";
         document.getElementById("message").focus();
         document.getElementById("loginError").style.color="#ff0000";
-        document.getElementById("loginError").scrollIntoView(true);
         return false;
     }
     else{
@@ -345,7 +344,6 @@ function validateRegister()
     else if(radio1==false && radio2==false){
         document.getElementById("loginError").innerHTML="Please Choose one Option.";
         document.getElementById("loginError").style.color="#ff0000";
-        document.getElementById("loginError").scrollIntoView(true);
         document.getElementById("ans1").focus();
         return false;
     }
@@ -354,7 +352,6 @@ function validateRegister()
         document.getElementById("loginError").innerHTML="Cant Register without Agreeing to our Terms.";
         document.getElementById("loginError").style.color="#ff0000";
         document.getElementById("agreement").focus();
-        document.getElementById("loginError").scrollIntoView(true);
         return false;
     }
     else{

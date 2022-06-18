@@ -3,7 +3,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@500&family=Luckiest+Guy&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
 /*import bootsrap css for carousel*/
-@import "bootstrap.css"; 
+/*i added bootstrap since i made some changes myself too*/
+@import "carousel.css"; 
 
 /*for whole */
 *{
@@ -1175,9 +1176,14 @@ textarea{
 	justify-content: center;
 	align-items: center;
 }
+#sideflex .imagesize{
+	margin-left: 40px;
+	width: 100%;
+}
 /*for more contact details*/
 #contactinfo{
-	margin-left: 30px;
+	margin-top: 5px;
+	margin-left: 20px;
 }
 /*logo in contact details*/
 .logoimg{
